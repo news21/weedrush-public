@@ -1,0 +1,42 @@
+[
+  {
+    "state":"AK",
+    "who_can_posess":"21 and older",
+    "possession_limit":"Up to an ounce",
+    "retail_sale":"Permitted, not yet established",
+    "home_grow":"Up to six plants, of which three can be mature",
+    "public_use":"Prohibited"
+  },
+  {
+    "state":"CO",
+    "who_can_posess":"21 and older",
+    "possession_limit":"Up to an ounce",
+    "retail_sale":"Permitted, established, regulated, taxed",
+    "home_grow":"Up to six plants, of which three can be mature",
+    "public_use":"Prohibited"
+  },
+  {
+    "state":"DC",
+    "who_can_posess":"21 and older",
+    "possession_limit":"Up to two ounces",
+    "retail_sale":"Blocked by Congress budget rider",
+    "home_grow":"Up to six plants, of which three can be mature",
+    "public_use":"Prohibited"
+  },
+  {
+    "state":"WA",
+    "who_can_posess":"21 and older",
+    "possession_limit":"Up to an ounce",
+    "retail_sale":"Permitted, established, regulated, taxed",
+    "home_grow":"Prohibited",
+    "public_use":"Prohibited"
+  },
+  {
+    "state":"OR",
+    "who_can_posess":"21 and older",
+    "possession_limit":"Up to an ounce",
+    "retail_sale":"Permitted, not yet established",
+    "home_grow":"Up to four plants",
+    "public_use":"Prohibited"
+  }
+]

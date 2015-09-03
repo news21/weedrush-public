@@ -1,0 +1,131 @@
+example:
+  url: /i-am-an-example/
+
+videos:
+  url: /videos/
+  
+data:
+  url: /data/
+  
+pin:
+  url: /inform-our-reporting/
+  
+about:
+  url: /about-weed-rush/
+  
+sections:
+  url: /all-the-stories-by-section/
+
+states:
+  url:  /weed-rush-reporting-by-state/
+    
+alaska:
+  url: /after-legalizing-marijuana-alaska-struggles-to-roll-out-regulations/
+  
+arizona:
+  url: /while-marijuana-advocates-look-to-legalize-in-arizona-concerns-remain-about-medical-marijuana-program/
+  
+banking:
+  url: /lacking-banks-marijuana-businesses-amass-stacks-of-cash/
+  
+california:
+  url: /medical-marijuana-brings-bedlam-and-crime-to-some-california-communities/
+  
+cannabisculture:
+  url: /advocates-marijuana-culture-has-broken-from-its-original-values/
+  
+caregivers:
+  url: /medical-marijuana-caregivers-not-inspected-could-feed-illegal-markets/
+  
+children:
+  url: /resolute-parents-demand-marijuana-treatment-for-children/
+  
+colorado:
+  url: /colorado-on-pot-americas-imperfect-marijuana-model/
+  
+communities:
+  url: /welcome-to-avoyelles-parish/
+  
+duid:
+  url: /marijuana-pushes-the-limits-in-the-inexact-science-of-duid/
+  
+edibles:
+  url: /edible-marijuana-is-it-worth-the-risk/
+  
+enforcement:
+  url: /enforcement/
+  
+hawaii:
+  url: /hawaiis-medical-marijuana-patients-turn-to-illegal-market-for-medicine/
+  
+healthandsafety:
+  url: /states-struggle-to-develop-comprehensive-weed-safety-regulations/
+  
+legalization:
+  url: /pro-legalization-groups-prepare-for-marijuana-measures-in-2016/
+  
+medical:
+  url: /with-a-federal-ban-on-marijuana-states-are-left-to-craft-their-own-medical-pot-rules-whether-they-work-or-not/
+  
+minorities:
+  url: /experts-minorities-struggle-for-footing-in-lucrative-cannabis-industry/
+  
+montana:
+  url: /in-montana-medical-marijuana-in-danger-as-debate-drags-on/
+  
+nationalbusiness:
+  url: /marijuana-industry-explodes-but-complications-abound/
+  
+nevada-ufc-sidebar:
+  url: /from-ufc-fighter-to-marijuana-grower-steve-cantwell-prepares-to-start-selling-pot-in-nevada/
+  
+nevada-delivery-sidebar:
+  url: /las-vegas-marijuana-delivery-operators-try-to-avoid-attention/
+
+nevada:
+  url: /marijuana-related-businesses-in-nevada-race-to-open-after-regulatory-delays/
+  
+newjersey:
+  url: /newjersey/
+  
+newyork:
+  url: /east-new-york-still-law-enforcement-target-for-marijuana-possession
+  
+opposition:
+  url: /opposition/
+  
+oregon:
+  url: /from-seed-to-sale-oregon-grows-on-its-reputation-for-prime-pot/
+  
+pin-bureau:
+  url: /pin-bureau/
+
+research:
+  url: /government-restrictions-lack-of-funding-slow-progress-on-medical-marijuana-research/
+  
+south:
+  url: /a-lost-generation-of-medical-marijuana-patients-still-lobbies-fiercely-in-the-south/
+  
+sustainable:
+  url: /growing-marijuana-industry-raises-environmental-concerns/
+
+triballands:
+  url: /tribes-wait-to-jump-into-weed-rush/
+
+vashonisland:
+  url: /vashon-island-growing-legal-pot-in-paradise/
+  
+veterans:
+  url: /veterans/
+  
+washington:
+  url: /washington-merges-recreational-and-medical-marijuana-to-stop-illegal-sales/
+
+washingtondc:
+  url: /the-new-world-of-marijuana-in-the-nations-capital-still-poses-old-problems/
+  
+workforce:
+  url: /growing-marijuana-industry-grapples-with-labor-dilemmas/
+  
+possession:
+  url: /possession-arrests/

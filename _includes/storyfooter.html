@@ -1,0 +1,98 @@
+
+</div></div>
+
+<div class="socialfooter">
+<div class="row hidden-xs">
+<div class="col-sm-5 col-xs-offset-1">
+
+<a style="text-decoration: none;" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+<div class="well well-sm text-center sans" style="background-color:#3b5998;color:#eee;text-transform:uppercase;font-size:14px;">&nbsp;&nbsp;Share on Facebook</div></a>
+</div>
+
+<div class="col-sm-5">
+<a class="twit" href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank">
+<div class="well well-sm text-center sans" style="background-color:#00aced;color:#eee;text-transform:uppercase;font-size:14px;">&nbsp;&nbsp;Share on Twitter</div></a>
+</div>
+
+</div> <!-- /row -->
+</div> <!-- /socialfooter -->
+<div class="container">
+<div class="row">
+
+
+{% unless page.pinfooter %}
+</div>
+{% endunless %}
+{% if page.pinfooter %}
+
+</div> <!-- /row -->
+</div> <!-- /container -->
+<div class="row pinfooter">
+<div class="col-sm-5 col-xs-offset-1">
+
+<h3>How did we do?</h3>
+<h4>We’d love your feedback.</h4>
+
+</div> <!-- /col -->
+<div class="col-sm-5 col-xs-offset-1">
+
+<button type="button" class="btn btn-pin btn-lg" data-toggle="modal" data-target="#pinModal">
+	Share your thoughts
+</button>
+<h4>Public Insight Network</h4>
+<h5>American Public Media</h5
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+
+</div>
+
+<div class="modal fade" id="pinModal" tabindex="-1" role="dialog" aria-labelledby="pinModal">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inform our reporting</h4>
+      </div>
+      <div class="modal-body">
+        <script type="text/javascript" src="https://www.publicinsightnetwork.org/air2/js/pinform.js?uuid=1ae87e24668d"></script>
+<div id="pin-query-1ae87e24668d"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+{% endif %}
+
+{% if page.credits %}
+</div>
+<div class="row creditsfooter">
+<div class="col-xs-9 col-xs-offset-1">
+
+<div class="credits">
+<ul class="media-list">
+{% for authname in page.credits %}
+{% assign cred = site.data.credits[authname] %}
+  <li class="media">
+  	<div class="well">
+      <img class="pull-left media-object img-thumbnail story-headshot" src="/img/headshots/{{ cred.link }}.jpg" alt="{{ cred.name }} headshot">
+    <div class="media-body">
+      <h4 class="media-heading"><strong>{{ cred.name }}</strong></h4>
+      <p>{{ cred.sponsor }}</p>
+     
+    </div>
+    </div>
+  </li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endif %}
+
+</div>

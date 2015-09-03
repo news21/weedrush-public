@@ -1,0 +1,30 @@
+{% comment %}
+
+To include: {% include e-vimeo.html video="72402483" caption="I am the caption for the video. (Joe Sartre | News21)" %}
+
+{% endcomment %}
+
+{% include boxbreaker.html %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-9 col-xs-offset-1"> 
+
+<div class="embed-responsive embed-responsive-16by9">  
+  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/{{ include.video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=a0181d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</div> <!-- /row -->
+</div> <!-- /col -->
+</div> <!-- /container -->
+<div class="container">
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+	<p class="caption">{{ include.caption }}</p>
+</div>
+
+</div>
+</div>
+
+
+
+{% include boxenter.html %}

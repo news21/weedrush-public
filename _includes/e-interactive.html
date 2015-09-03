@@ -1,0 +1,70 @@
+{% comment %}
+
+{% include e-pull-interactive.html path="example" 480="300" 768="400" 1200="500" 1600="700" caption="This is the caption. (Bob Sartre | News21)" %}
+
+{% endcomment %}
+
+{% include boxbreaker.html %}
+
+{% if include.480 %}
+
+<style type="text/css">
+
+
+@media only screen and (min-width:480px) {
+.{{ include.path }} {
+        height: {{ include.480 }}px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:768px) {
+	.{{ include.path }} {
+		height: {{ include.768 }}px;
+        width:100%;
+	}
+}
+@media only screen and (min-width:1200px) {
+.{{ include.path }} {
+	height: {{ include.1200 }}px;
+	width:100%;
+	}
+}
+
+@media only screen and (min-width:1600px) {
+.{{ include.path }} {
+	height: {{ include.1600 }}px;
+	width:100%;
+	}
+}
+
+</style>
+
+
+
+<div class="container-full {{ include.path }}">
+
+{% else %}
+<div class="container-full">
+{% endif %}
+
+	<div class="row">
+		<div class="col-sm-12"> 
+
+<div class="embed-responsive embed-responsive-16by9">  
+  <iframe class="embed-responsive-item" src="/interactives/{{ include.path }}/index.html"></iframe>
+  </div>
+  
+  </div>
+</div> <!-- /container-full -->
+<div class="container">
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+
+<p class="caption">{{ include.caption }}</p>
+</div>
+
+</div>
+</div>
+</div>
+{% include boxenter.html %}

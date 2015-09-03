@@ -1,0 +1,114 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.medical {
+background: url(/img/section-hero/medical-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.medical {background:url(/img/section-hero/medical-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.medical {background:url(/img/section-hero/medical-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;}
+}
+
+@media only screen and (min-width:1600px) {
+.medical {background:url(/img/section-hero/medical-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+<div id="medical" class="medical navfix jumbotron">
+<div class="container section-header">
+    <h1><a name="medical"></a>MEDICAL</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>Patients clamor for marijuana, legal or not.</h4></div>
+    </div>
+
+  </div>
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+
+<div class="row">
+	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.medical.url }}"><h3 class="media-heading">With a federal ban on pot, states make the rules — whether they work or not</h3></a>
+      <p>Every state regulates medical marijuana differently. The result is wide disparities across the country, including everything from lab testing to costs.
+</p>
+      </div>
+      
+	  <div class="col-sm-4">
+	    <a href="{{ site.data.urls.caregivers.url }}"><h3 class="media-heading small-headline">Rarely inspected, medical caregivers could feed illegal markets</h3></a>
+      <p>Medical caregivers in 23 states and Washington D.C. are not inspected or effectively regulated. Many participate legally. Others exploit their privileges.
+</p>
+	
+      </div>
+
+
+	  <div class="col-sm-4">
+	   <a href="{{ site.data.urls.children.url }}"><h3 class="media-heading small-headline">Resolute and desperate parents demand marijuana treatment for children</h3></a>
+      <p>An ever-growing lobby of tenacious parents are pushing politicians to legalize medical marijuana for children with epilepsy and other serious conditions.
+</p>
+	 
+      </div>
+</div> <!-- row -->
+
+<div class="row">
+
+	    <div class="col-sm-4">
+	  
+	  	<img src="/img/section-tease/CHILDREN-768.jpg" class="img-responsive">
+      </div>
+       	
+	 
+	  <div class="col-sm-4">
+		 <a href="{{ site.data.urls.nevada.url }}"><h3 class="media-heading small-headline">Marijuana businesses wait as Nevada works through regulations</h3></a>
+      <p>Although voters approved medical marijuana in a 2000 initiative, Nevada didn’t establish a system to distribute cannabis. When officials did in 2013, they set out to establish stringent rules.
+</p>
+      </div>
+
+
+	  <div class="col-sm-4">	  
+	    <a href="{{ site.data.urls.hawaii.url }}"><h3 class="media-heading small-headline">Hawaii’s medical marijuana patients turn to illegal market </h3></a>
+      <p>Without dispensaries or a legal way to purchase seeds, plants and medical marijuana, the illegal market on the islands thrives. Patients are left hoping for change. 
+</p>
+      </div>
+      
+     
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

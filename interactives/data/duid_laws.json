@@ -1,0 +1,512 @@
+[
+  {
+    "state":"Alabama",
+    "criminal_code":"32-5A-191",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than one year",
+    "fine":"$600 - $2,100",
+    "dl_suspension":"90 days (mandatory)",
+    "testing":"Blood (limited circumstances), urine, other bodily substances",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Alaska",
+    "criminal_code":"28.35.030",
+    "DUID_law":"Under the Influence",
+    "sentencing":"At least 72 hours",
+    "fine":"At least $1,500",
+    "dl_suspension":"N/A",
+    "testing":"Blood, urine",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Arizona",
+    "criminal_code":"28-1381",
+    "DUID_law":"Per se",
+    "sentencing":"At least 10 days",
+    "fine":"At least $250",
+    "dl_suspension":"At least 90 days, not more than one year",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"In addition to the $250 fine, there's an additional $500 for prison construction and $500 to the general state fund."
+  },
+  {
+    "state":"Arkansas",
+    "criminal_code":"5-65",
+    "DUID_law":"Under the Influence",
+    "sentencing":"At least 24 hours, not more than one year",
+    "fine":"$150 (mandatory)",
+    "dl_suspension":"six months (mandatory)",
+    "testing":"Blood, urine",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"California",
+    "criminal_code":"23152",
+    "DUID_law":"Under the Influence",
+    "sentencing":"96 hours - six months",
+    "fine":"$390 (mandatory) - $1,000",
+    "dl_suspension":"six months (mandatory)",
+    "testing":"Blood, urine",
+    "odd_things":"Can't drive while addicted to a drug, if the accident resulted in an injury, license is suspended a year mandatory."
+  },
+  {
+    "state":"Colorado",
+    "criminal_code":"42-4-1301",
+    "DUID_law":"Under the Influence",
+    "sentencing":"5 days (mandatory) - one year",
+    "fine":"$600-$1,000",
+    "dl_suspension":"nine months ",
+    "testing":"Blood, urine, saliva",
+    "odd_things":"Any \"habitual user\" of any drug can't drive, 5 ng/ml in blood."
+  },
+  {
+    "state":"Connecticut",
+    "criminal_code":"14-227 a ",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - six months",
+    "fine":"$500 - $1,000",
+    "dl_suspension":"one year",
+    "testing":"Blood, urine",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Delaware",
+    "criminal_code":"21-4177",
+    "DUID_law":"Per se",
+    "sentencing":"Less than six months",
+    "fine":"$230 (mandatory) - $1,150",
+    "dl_suspension":"90 days (mandatory), not more than one year",
+    "testing":"Blood, urine",
+    "odd_things":"If you're taking the drugs legally, you can't be guilty. Within 4 hours. Court may mandate rehabilitation program, may include confinement not longer than six months."
+  },
+  {
+    "state":"D.C",
+    "criminal_code":"50-2201.05",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than 90 days",
+    "fine":"$300",
+    "dl_suspension":"six months (mandatory)",
+    "testing":"Blood, urine, breath",
+    "odd_things":"Repeat offenders may be required to seek treatment."
+  },
+  {
+    "state":"Florida",
+    "criminal_code":"316.193",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Less than six months",
+    "fine":"$500 - $1,000",
+    "dl_suspension":"180 days - one year ",
+    "testing":"Blood (only if taken to a medical facility), urine (for detecting controlled substances)",
+    "odd_things":"Court may order that jail time be served in a rehab center."
+  },
+  {
+    "state":"Georgia",
+    "criminal_code":"40-6-391",
+    "DUID_law":"Per se",
+    "sentencing":"24 hours (mandatory) - 10 days",
+    "fine":"$300 (mandatory) - $1,000",
+    "dl_suspension":"one year",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Hawaii",
+    "criminal_code":"291E-61",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - five days",
+    "fine":"$150 - $1,000",
+    "dl_suspension":"90 days ",
+    "testing":"Blood, urine",
+    "odd_things":"Mandatory 14 hour drug abuse education counseling workshop."
+  },
+  {
+    "state":"Idaho",
+    "criminal_code":"18-8004",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than six months",
+    "fine":"Not more than $1,000",
+    "dl_suspension":"30 days (mandatory), 60-150 days restricted driving",
+    "testing":"Blood, urine",
+    "odd_things":"Defendents shall undergo alcohol/drug evaluation at their own expense."
+  },
+  {
+    "state":"Illinois",
+    "criminal_code":"625 ILCS 5/11-501",
+    "DUID_law":"Per se",
+    "sentencing":"Up to one year",
+    "fine":"not more than $2,500",
+    "dl_suspension":"six months ",
+    "testing":"Blood, urine",
+    "odd_things":"Must obtain an alcohol/drug evaluation and undergo treatment as determined."
+  },
+  {
+    "state":"Indiana",
+    "criminal_code":"9-30-5-1/5-2",
+    "DUID_law":"Per se",
+    "sentencing":"Up to 60 days",
+    "fine":"Up to $500",
+    "dl_suspension":"30 days (mandatory) 90 days - two years",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Iowa",
+    "criminal_code":"321J.2",
+    "DUID_law":"Per se",
+    "sentencing":"48 hours (mandatory) - one year",
+    "fine":"$625 (mandatory)",
+    "dl_suspension":"30 days (mandatory) - one year",
+    "testing":"Blood, urine",
+    "odd_things":"Medically dispensed drugs are a defense, court ordered substance abuse evaluation and education program."
+  },
+  {
+    "state":"Kansas",
+    "criminal_code":"8-1567",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - six months",
+    "fine":"$500-$1,000",
+    "dl_suspension":"30 days (mandatory) and 330 days restriction",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"Per se for habitual users."
+  },
+  {
+    "state":"Kentucky",
+    "criminal_code":"189A.010",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours - 30 days",
+    "fine":"$200-$500",
+    "dl_suspension":"30 days (mandatory) - 120 days",
+    "testing":"Blood, urine",
+    "odd_things":"Can be sentenced to substance abuse education or treatment program."
+  },
+  {
+    "state":"Louisiana",
+    "criminal_code":"Title 14 Section 98",
+    "DUID_law":"Under the Influence",
+    "sentencing":"10 days (mandatory) - six months",
+    "fine":"$750-$1,000",
+    "dl_suspension":"90 days",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"A combination of probation, community service, and participation in a substance abuse and driver improvement program may be done instead of the mandatory sentence."
+  },
+  {
+    "state":"Maine",
+    "criminal_code":"Title 29-A Sections 2401/2411",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - one year",
+    "fine":"Not more than $2,000",
+    "dl_suspension":"60 days (mandatory) - 90 days",
+    "testing":"Blood, urine, breath",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Maryland",
+    "criminal_code":"21-902",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than two months",
+    "fine":"Not more than $500",
+    "dl_suspension":"Not more than 60 days",
+    "testing":"Blood",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Massachusetts",
+    "criminal_code":"Chapter 90 Section 24",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than 2 and half years",
+    "fine":"$500-$5,000",
+    "dl_suspension":"45-90 days (mandatory) - one year",
+    "testing":"Not specified",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Michigan",
+    "criminal_code":"Act 300 of 1949",
+    "DUID_law":"Per se",
+    "sentencing":"Not more than 93 days ",
+    "fine":"$100 (mandatory) - $500",
+    "dl_suspension":"180 days ",
+    "testing":"Blood, urine",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Minnesota",
+    "criminal_code":"169A/1969A.20",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Up to 90 days",
+    "fine":"Not more than $1,000",
+    "dl_suspension":"15 days (mandatory)",
+    "testing":"Blood, urine",
+    "odd_things":"All other Schedule 1 drugs are per se."
+  },
+  {
+    "state":"Mississippi",
+    "criminal_code":"Title 62 Section 11",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than 48 hours",
+    "fine":"$250 (mandatory) - $1,000",
+    "dl_suspension":"30 days (mandatory) - one year",
+    "testing":"Blood, urine, breath",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Missouri",
+    "criminal_code":"Chapter 577.010/ 577.001",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than six months",
+    "fine":"Not more than $500",
+    "dl_suspension":"30 days (mandatory)",
+    "testing":"Blood, urine, saliva",
+    "odd_things":"Must complete substance abuse program."
+  },
+  {
+    "state":"Montana",
+    "criminal_code":"61-8-401",
+    "DUID_law":"Under the Influence",
+    "sentencing":"24 hours (mandatory) - six months",
+    "fine":"Up to $300",
+    "dl_suspension":"6 months",
+    "testing":"Blood",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Nebraska",
+    "criminal_code":"60-6 196",
+    "DUID_law":"Under the Influence",
+    "sentencing":"seven to 60 days",
+    "fine":"$400-$500",
+    "dl_suspension":"30 days, restricted six months",
+    "testing":"Blood, urine",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"Nevada",
+    "criminal_code":"484.379",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Two days (mandatory) - six months",
+    "fine":"$400 (mandatory) - $1,000",
+    "dl_suspension":"Unspecified revocation authorized",
+    "testing":"Blood, urine",
+    "odd_things":"Marijuana- 10 ng/ml in urine or 2 ng/ml in blood Marijuana metabolite- 15 ng/ml in urine or 5 ng/ml in blood. Judge may order six months mandatory drug treatment."
+  },
+  {
+    "state":"New Hampshire",
+    "criminal_code":"265-A:2",
+    "DUID_law":"Under the Influence",
+    "sentencing":"None",
+    "fine":"$500 (mandatory)",
+    "dl_suspension":"90 days (mandatory), not more than two years",
+    "testing":"Blood, urine",
+    "odd_things":"May be sentenced to substance abuse treatment."
+  },
+  {
+    "state":"New Jersey",
+    "criminal_code":"39:4-50",
+    "DUID_law":"Under the Influence",
+    "sentencing":"12 hours (mandatory) - 48 hours",
+    "fine":"$300 (mandatory) - $500",
+    "dl_suspension":"seven months (mandatory) - one year",
+    "testing":"Not specified",
+    "odd_things":"No implied consent laws for drugs."
+  },
+  {
+    "state":"New Mexico",
+    "criminal_code":"Chapter 66 Article 8 Sections 102-112",
+    "DUID_law":"Under the Influence/Incapable",
+    "sentencing":"Not more than 90 days",
+    "fine":"Not more than $500",
+    "dl_suspension":"One year",
+    "testing":"Blood, breath",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"New York",
+    "criminal_code":"1192",
+    "DUID_law":"Incapable",
+    "sentencing":"Not more than one year",
+    "fine":"$500 (mandatory)",
+    "dl_suspension":"At least six months",
+    "testing":"Blood, urine, saliva",
+    "odd_things":"N/A"
+  },
+  {
+    "state":"North Carolina",
+    "criminal_code":"20-138.1/138.3",
+    "DUID_law":"Per se",
+    "sentencing":"24 hours (mandatory) - 24 months",
+    "fine":"$200-$4,000",
+    "dl_suspension":"One year",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"Fine and sentencing dependent on the level of DWI, 1-5."
+  },
+  {
+    "state":"North Dakota",
+    "criminal_code":"39-08-01",
+    "DUID_law":"Incapable",
+    "sentencing":"None",
+    "fine":"$250 (mandatory)",
+    "dl_suspension":"None",
+    "testing":"Blood, urine, saliva",
+    "odd_things":"Mandatory addiction evaluation."
+  },
+  {
+    "state":"Ohio",
+    "criminal_code":"4511.19",
+    "DUID_law":"Under the Influence",
+    "sentencing":"3 days (mandatory) - six months",
+    "fine":"$375 (mandatory) - $1,075",
+    "dl_suspension":"30 days",
+    "testing":"Blood, urine, other bodily substances",
+    "odd_things":"Marijuana- 10 ng/ml in urine or 2 ng/ml in blood. Or as measured by gas chromatography, 35 ng/ml in urine or 50 ng/ml in blood."
+  },
+  {
+    "state":"Oklahoma",
+    "criminal_code":"Title 47 Section 761",
+    "DUID_law":"Incapable",
+    "sentencing":"48 hours (mandatory) - 10 days",
+    "fine":"Not more than $1,000",
+    "dl_suspension":"180 days",
+    "testing":"Blood, urine, saliva",
+    "odd_things":"Substance abuse program."
+  },
+  {
+    "state":"Oregon",
+    "criminal_code":"813.010",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - one year",
+    "fine":"$1,000 (mandatory) - $6,250",
+    "dl_suspension":"30 days (mandatory) - one year",
+    "testing":"Blood, urine",
+    "odd_things":"Victim Impact Program, drug abuse treatment."
+  },
+  {
+    "state":"Pennsylvania",
+    "criminal_code":"75-3802",
+    "DUID_law":"Per se",
+    "sentencing":"72 hours (mandatory) - 6 months",
+    "fine":"$1,000 (mandatory) - $5,000",
+    "dl_suspension":"12 months (mandatory)",
+    "testing":"Blood, urine",
+    "odd_things":"House arrest, drug treatment."
+  },
+  {
+    "state":"Rhode Island",
+    "criminal_code":"31-27-2",
+    "DUID_law":"Per se ",
+    "sentencing":"Up to one year ",
+    "fine":"$100 (mandatory) - $300",
+    "dl_suspension":"3 months (mandatory) - six months ",
+    "testing":"Blood",
+    "odd_things":"Mandatory 10 to 60 hours of community service."
+  },
+  {
+    "state":"South Carolina",
+    "criminal_code":"56-5-2930",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - 30 days",
+    "fine":"$300 (mandatory)",
+    "dl_suspension":"six months",
+    "testing":"Blood (in limited circumstances), urine",
+    "odd_things":"License is only restricted if agree to complete drug treatment."
+  },
+  {
+    "state":"South Dakota",
+    "criminal_code":"32-23-1",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than one year",
+    "fine":"Not more than $2,000",
+    "dl_suspension":"30 days - one year",
+    "testing":"Blood, other bodily substances",
+    "odd_things":"Force may be used to obtain a blood test, anyone under the age of 21 can't have any trace of marijuana in their system while driving."
+  },
+  {
+    "state":"Tennessee",
+    "criminal_code":"55-10-401,403,406",
+    "DUID_law":"Under the Influence",
+    "sentencing":"48 hours (mandatory) - 11 months 29 days",
+    "fine":"$350 (mandatory) - $1,500",
+    "dl_suspension":"one year (mandatory)",
+    "testing":"Blood, urine ",
+    "odd_things":"Punishment more severe if child was in the car, community service, drug treatment or probation may be substituted for jail time."
+  },
+  {
+    "state":"Texas",
+    "criminal_code":"49.01,04",
+    "DUID_law":"Intoxication",
+    "sentencing":"72 hours (mandatory) - 180 days",
+    "fine":"Not more than $2,000",
+    "dl_suspension":"90 days - one year",
+    "testing":"Blood, breath",
+    "odd_things":"Zero tolerance for addicts, don't have to prove mental state."
+  },
+  {
+    "state":"Utah",
+    "criminal_code":"Title 41",
+    "DUID_law":"Per se",
+    "sentencing":"48 hours (mandatory)",
+    "fine":"$700 (mandatory)",
+    "dl_suspension":"90 days",
+    "testing":"Blood, urine, oral fluid",
+    "odd_things":"Legal use can be used as a defense, or if the substance was ingested involuntarily."
+  },
+  {
+    "state":"Vermont",
+    "criminal_code":"Title 23, Chapter 13, Section 1201",
+    "DUID_law":"Incapable",
+    "sentencing":"Not more than two years",
+    "fine":"Not more than $750",
+    "dl_suspension":"90 days (mandatory)",
+    "testing":"Blood",
+    "odd_things":"Possible defense: \"not intention of placing the vehicle in motion\"."
+  },
+  {
+    "state":"Virginia",
+    "criminal_code":"18.2-266",
+    "DUID_law":"Under the Influence",
+    "sentencing":"five days (mandatory)",
+    "fine":"$250 (mandatory)",
+    "dl_suspension":"one year",
+    "testing":"Blood",
+    "odd_things":"Specified amounts for other drugs but not for marijuana."
+  },
+  {
+    "state":"Washington",
+    "criminal_code":"46.61,502,504,5249",
+    "DUID_law":"Under the Influence, Negligent Driving",
+    "sentencing":"Not more than one year",
+    "fine":"Not more than $5,000",
+    "dl_suspension":"Limited to alcohol only",
+    "testing":"Blood",
+    "odd_things":"Three separate laws about DUID, driving, being in 'actual physical control' and driving negligently."
+  },
+  {
+    "state":"West Virginia",
+    "criminal_code":"17C-5-2",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Up to six months ",
+    "fine":"$100 (mandatory)",
+    "dl_suspension":"90 days (mandatory) - six months",
+    "testing":"Not specified",
+    "odd_things":"Zero tolerarance for habitual users"
+  },
+  {
+    "state":"Wisconsin",
+    "criminal_code":"346.63",
+    "DUID_law":"Per se",
+    "sentencing":"None",
+    "fine":"$150 (mandatory) - $300",
+    "dl_suspension":"six months - nine months",
+    "testing":"Blood (for per se), urine",
+    "odd_things":"Specifies Delta 9 THC."
+  },
+  {
+    "state":"Wyoming",
+    "criminal_code":"31-5-233",
+    "DUID_law":"Under the Influence",
+    "sentencing":"Not more than six months",
+    "fine":"Not more than $750",
+    "dl_suspension":"90 days",
+    "testing":"Blood, urine ",
+    "odd_things":"N/A"
+  }
+]

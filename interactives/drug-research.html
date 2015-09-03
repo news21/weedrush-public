@@ -1,0 +1,211 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Drug Research</title>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <style type="text/css">
+            #container {
+                min-width: 300px;
+                max-width: 700px;
+                min-height: 600px;
+                max-height: 800px;
+                margin: 0 auto;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                var find = ["FIC","NCATS","NCCAM","NCI","NCMHD","NCRR","NEI","NHGRI","NHLBI","NIA","NIAAA","NIAID","NIAMS","NIBIB","NICHD","NIDA","NIDCD","NIDCR","NIDDK","NIEHS","NIGMS","NIMH","NIMHD","NINDS","NINR","NLM","OD"];
+                var replace = ["Fogarty International Center","National Center for Advancing Translational Sciences","National Center for Complementary and Integrative Health","National Cancer Institute","National Center on Minority Health and Health Disparities","National Center for Research Resources","National Eye Institute","National Human Genome Research Institute","National Heart Lung and Blood Institute","National Institute on Aging","National Institute on Alcohol Abuse and Alcoholism","National Institute of Allergy and Infectious Diseases","National Institute of Arthritis and Musculoskeletal and Skin Diseases","National Institute of Biomedical Imaging and Bioengineering","National Institute of Child Health and Human Development","National Institute on Drug Abuse","National Institute on Deafness and Other Communication Disorders","National Institute of Dental and Craniofacial Research","National Institute of Diabetes and Digestive and Kidney Diseases","National Institute of Environmental Health Sciences","National Institute of General Medical Sciences","National Institute of Mental Health","National Institute on Minority Health and Health Disparities","National Institute of Neurological Disorders and Stroke","National Institute of Nursing Research","National Library of Medicine","NIH Office of the Director"];
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                var data = {
+                    "Amphetamine": {
+                        "Abuse related": {"FIC": "331661","NCCAM": "2248432","NCI": "210990","NCRR": "1779374","NIA": "845838","NIAAA": "36749244","NIDA": "419386417","NIDDK": "1844418","NIEHS": "812099","NIGMS": "1326788","NIMH": "9105399","NINDS": "2791034"},
+                        "Not abuse related": {"NCI": "1248154","NCRR": "1111228","NHLBI": "418295","NIA": "3700376","NIAID": "402875","NIBIB": "3627965","NICHD": "10981326","NIDA": "940929","NIDDK": "13417816","NIEHS": "11092347","NIGMS": "2378338","NIMH": "119164155","NINDS": "26168783","NINR": "1117348"}
+                    },
+                    "Benzodiazepines": {
+                        "Abuse related": {"NCCAM": "1287073","NCI": "2397930","NCRR": "458476","NHLBI": "8920825","NIAAA": "74031935","NICHD": "1894777","NIDA": "98867545","NIEHS": "4571133","NIGMS": "113601","NIMH": "3766299","NINDS": "2381499"},
+                        "Not abuse related": {"FIC": "326163","NCATS": "3258331","NCCAM": "13256596","NCI": "265120398",
+                            "NCRR": "12260057","NEI": "10326025","NHGRI": "11339704","NHLBI": "84491786","NIA": "50420757","NIAID": "50993635","NIAMS": "25717716","NIBIB": "10683489","NICHD": "39234126","NIDA": "7888560","NIDCD": "4784159","NIDCR": "8478275","NIDDK": "51214749","NIEHS": "103737420","NIGMS": "71963838","NIMH": "197699545","NIMHD": "383561","NINDS": "229842440","NINR": "5709573","NLM": "2484859","OD": "2535000"}
+                    },  
+                    "Ketamine": {       
+                        "Abuse related": {"FIC": "88407","NIA": "785510","NIAAA": "5307621","NIDA": "28050701","NIMH": "4992343"},
+                        "Not abuse related": {"FIC": "38230","NCATS": "3153407","NCRR": "247140","NEI": "3087492","NHLBI": "3495789","NIA": "9511394","NIAID": "1764546","NICHD": "7636946","NIDA": "9583916","NIDCD": "424237","NIDDK": "2241390","NIEHS": "13764435","NIGMS": "7436421","NIMH": "91590784","NINDS": "10334222","OD": "698858"}
+                    },
+                    "Marijuana": {      
+                        "Abuse related": {"FIC": "243254","NCCAM": "393849",
+                            "NCI": "3022946","NCMHD": "1460553","NCRR": "1621290","NIA": "2837821","NIAAA": "221277941","NICHD": "5841447","NIDA": "834446727","NIGMS": "1238229","NIMH": "51424140","NIMHD": "2456804","NINDS": "6721894"},
+                        "Not abuse related": {"NCCAM": "4926265","NCI": "24246417","NCMHD": "2488503","NCRR": "4657889","NEI": "5228341","NHGRI": "500001","NHLBI": "31134223","NIA": "26464004","NIAAA": "3162236","NIAID": "5086362","NIAMS": "3803063","NIBIB": "5250066","NICHD": "4734266","NIDA": "14277446","NIDCD": "12391644","NIDCR": "7573956","NIDDK": "24660258","NIEHS": "10390297","NIGMS": "18626588","NIMH": "48444484","NINDS": "38301174","NINR": "35378","NLM": "913657"}
+                    },  
+                    "Methamphetamine": {        
+                        "Abuse related": {"FIC": "88407","NCCAM": "1816291","NCMHD": "1100000","NCRR": "8945394","NHLBI": "257178","NIA": "943412","NIAAA": "22228346","NIAID": "133282371","NICHD": "13478166","NIDA": "736941043","NIEHS": "909669","NIGMS": "907290","NIMH": "4255495","NIMHD": "506645","NINDS": "10131945","OD": "1133327"},
+                        "Not abuse related": {"NCI": "840987","NCRR": "2183642","NIA": "865943","NIAID": "6621792","NIBIB": "4879279","NIDA": "991109","NIDCR": "76050","NIDDK": "1507270","NIEHS": "4510389","NIGMS": "6808985","NIMH": "13614352","NINDS": "1647942"}
+                    },
+                    "Opiates": {        
+                        "Abuse related": {"NCCAM": "3394351","NCI": "5823908","NCMHD": "185858","NCRR": "2477463","NHLBI": "13571862","NIA": "2811610","NIAAA": "184583708","NIAID": "11634897","NIAMS": "250830","NICHD": "3798715","NIDA": "1427547940","NIDCR": "1482352","NIDDK": "4133195","NIEHS": "1913664","NIGMS": "1199890","NIMH": "12943075","NIMHD": "2340213","NINDS": "4043149","OD": "279608"},
+                        "Not abuse related": {"FIC": "339625","NCATS": "1524178","NCCAM": "39601734","NCI": "34870471","NCMHD": "374922","NCRR": "8898067","NEI": "6965498","NHGRI": "500001","NHLBI": "65704746","NIA": "37087274","NIAID": "7290745","NIAMS": "27607078","NIBIB": "5357378","NICHD": "44577848","NIDA": "28451425","NIDCD": "6238567","NIDCR": "25133810","NIDDK": "34401764","NIEHS": "1471989","NIGMS": "43104548","NIMH": "58913987","NIMHD": "1990098","NINDS": "99679978","NINR": "21366571","NLM": "99864","OD": "2051127"}
+                    }
+                },
+                points = [],
+                drug_p,
+                drug_val,
+                drug_i,
+                researchtype_p,
+                researchtype_i,
+                agency_p,
+                agency_i,
+                agency_name = [],
+                drug,
+                researchtype,
+                agency;
+                agency_name['FIC']='FIC';
+                agency_name['NCATS']='NCATS';
+                agency_name['NCCAM'] ='NCCAM';
+                agency_name['NCI'] ='NCI';
+                agency_name['NCMHD'] ='NCMHD';
+                agency_name['NCRR'] ='NCRR';
+                agency_name['NEI'] ='NEI';
+                agency_name['NHGRI'] ='NHGRI';
+                agency_name['NHLBI'] ='NHLBI';
+                agency_name['NIA'] ='NIA';
+                agency_name['NIAAA'] ='NIAAA';
+                agency_name['NIAID'] ='NIAID';
+                agency_name['NIAMS'] ='NIAMS';
+                agency_name['NIBIB'] ='NIBIB';
+                agency_name['NICHD'] ='NICHD';
+                agency_name['NIDA'] ='NIDA';
+                agency_name['NIDCD'] ='NIDCD';
+                agency_name['NIDCR'] ='NIDCR';
+                agency_name['NIDDK'] ='NIDDK';
+                agency_name['NIEHS'] ='NIEHS';
+                agency_name['NIGMS'] ='NIGMS';
+                agency_name['NIMH'] ='NIMH';
+                agency_name['NIMHD'] ='NIMHD';
+                agency_name['NINDS'] ='NINDS';
+                agency_name['NINR'] ='NINR';
+                agency_name['NLM'] ='NLM';
+                agency_name['OD'] ='OD';
+                drug_i = 0;
+                for (drug in data) {
+                    if (data.hasOwnProperty(drug)) {
+                        var weedcolors = ['#9FBEBF', '#465433','#CBD4C0', '#DDAA30', '#6C8182', '#95B65E'];
+                        drug_val = 0;
+                        drug_p = {
+                            id: "id_" + drug_i,
+                            name: drug,
+                            color: weedcolors[drug_i]
+                        };
+                        researchtype_i = 0;
+                        for (researchtype in data[drug]) {
+                            if (data[drug].hasOwnProperty(researchtype)) {
+                                researchtype_p = {
+                                    id: drug_p.id + "_" + researchtype_i,
+                                    name: researchtype,
+                                    parent: drug_p.id
+                                };
+                                points.push(researchtype_p);
+                                agency_i = 0;
+                                for (agency in data[drug][researchtype]) {
+                                    if (data[drug][researchtype].hasOwnProperty(agency)) {
+                                        agency_p = {
+                                            id: researchtype_p.id + "_" + agency_i,
+                                            name: agency_name[agency],
+                                            parent: researchtype_p.id,
+                                            value: Math.round(+data[drug][researchtype][agency])
+                                        };
+                                        drug_val += agency_p.value;
+                                        points.push(agency_p);
+                                        agency_i = agency_i + 1;
+                                    }
+                                }
+                                researchtype_i = researchtype_i + 1;
+                            }
+                        }
+                        // drug_p.value = Math.round(drug_val / researchtype_i);
+                        points.push(drug_p);
+                        drug_i = drug_i + 1;
+                    }
+                }
+                $('#container').highcharts({
+                    credits: {
+                        style: {
+                            fontSize: '1em'
+                        },
+                        text: 'Source: National Institutes of Health',
+                        href: 'http://www.nih.gov/'
+                    },
+                    tooltip: {
+                        style: {
+                            fontWeight: 'bold'
+                        },
+                        pointFormatter: function() {
+                            var value = this.value || this.node.childrenTotal;
+                            // yes_tests = yes_tests.replaceArray(find, replace);
+                            // return '<b>' + this.name + ':</b> $' + Highcharts.numberFormat(value, 0, '', ',')
+                            var fullName = this.name.replaceArray(find, replace);
+                            return '<b>' + fullName + ':</b> $' + Highcharts.numberFormat(value, 0, '', ',');
+                        }
+                    },
+                    series: [{
+                        type: "treemap",
+                        layoutAlgorithm: 'squarified',
+                        allowDrillToNode: true,
+                        dataLabels: {
+                            enabled: false
+                        },
+                        levelIsConstant: false,
+                        levels: [{
+                            level: 1,
+                            dataLabels: {
+                                enabled: true
+                            },
+                            borderWidth: 3
+                        }],
+                        data: points
+                    }],
+                    subtitle: {
+                        style: {
+                            fontFamily: 'Roboto Condensed',
+                            fontSize: '1.5em'
+                        },
+                        text: 'Federal grants 2008 - 2014 by drug and research type. Click to drill down.'
+                    },
+                    title: {
+                        style: {
+                            fontFamily: 'Roboto',
+                            fontWeight: 'bold',
+                            fontSize: '3em'
+                        },                        
+                        text: 'Drug Research Breakdown'
+                    }
+                });
+            });
+            String.prototype.replaceArray = function(find, replace) {
+              var replaceString = this;
+              var regex;
+              for (var j = 0; j < find.length; j++) {
+                regex = new RegExp(find[j], "g");
+                replaceString = replaceString.replace(regex, replace[j]);
+              }
+              return replaceString;
+            };
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <script src="js/heatmap.js"></script>
+        <script src="js/treemap.js"></script>
+        <div id="container"></div>
+    </body>
+</html>

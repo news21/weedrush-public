@@ -1,0 +1,105 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.science {
+background: url(/img/section-hero/science-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.science {background:url(/img/section-hero/science-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.science {background:url(/img/section-hero/science-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;}
+}
+
+@media only screen and (min-width:1600px) {
+.science {background:url(/img/section-hero/science-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+<div id="science" class="science navfix jumbotron">
+<div class="container section-header">
+    <h1><a name="science"></a>SCIENCE</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>Is marijuana safe? It depends on who gives the answer.</h4></div>
+    </div>
+
+  </div>
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+<div class="row">
+	
+	 <div class="col-sm-4">
+       	<img src="/img/section-tease/science.jpg" class="img-responsive">
+      </div>
+	
+	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.sustainable.url }}"><h3 class="media-heading">Marijuana crops are raising concerns over water and pesticides</h3></a>
+      <p>More legal and illegal marijuana plants have sprouted up across the country. But the crop's needs are leaving their mark.
+</p>
+      </div>
+      
+	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.research.url }}"><h3 class="media-heading small-headline">Restrictions and lack of funding have hindered research</h3></a>
+      <p>Federal health agencies spend millions on pot science. But most money is spent on addiction research, not on the benefits.
+</p>
+      </div>
+      
+      
+      
+      </div> <!-- row -->
+
+	  <!-- Add the extra clearfix for only the required viewport -->
+	<div class="row">
+	  <div class="col-sm-6">
+	  
+	    <a href="{{ site.data.urls.healthandsafety.url }}"><h3 class="media-heading small-headline">States struggle to develop weed safety regulations</h3></a>
+      <p>Without comprehensive regulation and established lab testing, scientists say medical marijuana patients could consume contaminated weed.
+</p>
+      </div>
+
+	  <div class="col-sm-6">
+	  <a href="{{ site.data.urls.edibles.url }}"><h3 class="media-heading small-headline">From cookies to lotion, is edible marijuana worth the risk?</h3></a>
+      <p>Marijuana is consumed in ways unimaginable a couple decades ago. But could their ability to deliver a higher high do more damage than good?
+</p>
+      </div>
+
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

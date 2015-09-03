@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Montana Medical Marijuana Program Participation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700">
+        <style>
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+            .subhed2 {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: .8em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+                font-style: italic;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+            	Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        text: 'Stacked column chart',
+                        style: {
+                            display: 'none',
+                        }
+                    },
+                    xAxis: {
+                        categories: ['2011', '2015']
+                    },
+                    yAxis: {
+                        labels: {
+                            format: '{value}%'
+                        },
+                        title: {
+                            enabled: false
+                        },
+                        min: 0
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.percentage:.0f}%<br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'percent',
+                            events: {
+                                legendItemClick: function () {
+                                    return false;
+                                }
+                            }
+                        },
+                        allowPointSelect: false,
+                    },
+                    legend: {
+                        reversed: true,
+                        align: 'center',
+                        x: 0,
+                        layout: 'horizontal',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        borderWidth: 0,
+                        shadow: false
+                    },
+                    series: [{
+                        name: 'Oppose',
+                        color: '#4A969E',
+                        data: [18, 13]
+                    }, {
+                        name: 'Not Sure',
+                        color: '#516061',
+                        data: [7, 5]
+                    }, {
+                        name: 'Decline',
+                        color: '#967421',
+                        data: [1, 1]
+                    }, {
+                        name: 'Support',
+                        color: '#FFC437',
+                        data: [74, 81]
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Support for Medical Marijuana<h2></div>
+        <div class="subhed">Certain states are discussing the idea of legalizing marijuana. Would you support or oppose the legalization of marijuana for the following purposes in your state: Medical Treatment?</div>
+        <div class="subhed2">Source: Harris Polls</div>
+        <div id="container" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+    </body>
+</html>

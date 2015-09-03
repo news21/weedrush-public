@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Marijuana Conditions</title>
+    <!-- Google Analytics: change UA-1988769-11 to be your site's ID. --> <script> (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new
+    Date; e=o.createElement(i);r=o.getElementsByTagName(i)[0]; e.src='https://www.google-analytics.com/analytics.js'; r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); ga('create','UA-1988769-11','auto');ga('send','pageview');
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="col-md-10">
+            <select class="form-control" id="select-condition" onchange="update_type_states();">
+                <option value="#">Select a condition</option>
+                <option value="AIDS">AIDS</option>
+                <option value="ALS">ALS</option>
+                <option value="Alzheimers">Alzheimer's</option>
+                <option value="Anorexia">Anorexia</option>
+                <option value="Arthritis">Arthritis</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Cachexia">Cachexia</option>
+                <option value="Cervical_Dystonia">Cervical Dystonia</option>
+                <option value="Chronic_Severe_Pain">Chronic Severe Pain</option>
+                <option value="Cirrhosis">Cirrhosis</option>
+                <option value="Crohns">Crohn's</option>
+                <option value="Chronic_Renal_Failure">Chronic Renal Failure</option>
+                <option value="Doctor_Recommendation">Doctor Recommendation</option>
+                <option value="Epilepsy">Epilepsy</option>
+                <option value="Fibromyalgia">Fibromyalgia</option>
+                <option value="Glaucoma">Glaucoma</option>
+                <option value="Hepatitis_C">Hepatitis C</option>
+                <option value="HIV">HIV</option>
+                <option value="Hospice_Admittance">Hospice Admittance</option>
+                <option value="Huntingtons">Huntington's</option>
+                <option value="Inflammatory_Bowel_Disease">Inflammatory Bowel Disease</option>
+                <option value="Mayor_Approves">Mayor Approves</option>
+                <option value="MS">MS</option>
+                <option value="Muscular_Distrophy">Muscular Distrophy</option>
+                <option value="Muscle_Spasm">Muscle Spasm</option>
+                <option value="Nail_Patella">Nail Patella</option>
+                <option value="Nausea">Nausea</option>
+                <option value="Pancreatitis">Pancreatitis</option>
+                <option value="Parkinsons">Parkinson's</option>
+                <option value="Perpheral_Neuropathy">Perpheral Neuropathy</option>
+                <option value="PTSD">PTSD</option>
+                <option value="Seizures">Seizures</option>
+                <option value="Spacity">Spasticity/Spinal Cord Damage</option>
+                <option value="Chemo">AZT/Chemo/Radiation</option>
+                <option value="Vomiting">Intractable Vomiting</option>
+                <option value="Tourettes">Tourette's Syndrome</option>
+                <option value="Brain_Injury">Tramatic Brain Injury</option>
+            </select>
+        </div>
+        <div id="typetextbox"></div><br /><br />
+    </div>   
+    <script src="js/mm_conditions_type.js"></script>
+  </body>
+</html>

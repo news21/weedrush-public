@@ -1,0 +1,12 @@
+example: 
+- title: "I am a sidebar story"
+  slug: "example"
+- title: "Another sidebar story"
+  slug: "states"
+  
+nevada:
+- title: "Las Vegas marijuana delivery operators try to avoid attention" 
+  slug: nevada-delivery-sidebar
+- title: "From UFC fighter to marijuana grower, Steve Cantwell prepares to start selling pot in Nevada"
+  slug: nevada-ufc-sidebar
+  

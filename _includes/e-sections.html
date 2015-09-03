@@ -1,0 +1,12 @@
+<div class="sections pull-right col-md-offset-1">
+
+<h3>Sections</h3>
+
+<ul>
+{% for title in site.data.sections.[include.slug] %}
+
+<li><a href="#{{ title['anchor'] }}">{{ title['title'] }}</a></li>
+
+{% endfor %}
+</ul>
+</div>

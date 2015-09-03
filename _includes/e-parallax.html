@@ -1,0 +1,93 @@
+{% comment %}
+
+To include in story: {% include e-parallax.html image="flags" caption="This is the caption. (Bob Sartre | News21" %}
+
+Put image in /img/single/
+
+
+{% endcomment %}
+
+<style type="text/css">
+
+.{{ include.image }} {
+	margin-top: 30px;
+}
+
+@media only screen and (max-width:480px) {
+.{{ include.image }} {background:url(/img/single/{{ include.image }}/{{ include.image }}-768.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  			height: 480px;
+			width:100%;
+			 background-attachment: scroll;
+			 
+	}
+}
+
+@media only screen and (min-width:480px) {
+.{{ include.image }} {background:url(/img/single/{{ include.image }}/{{ include.image }}-768.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  			height: 480px;
+			width:100%;
+			 background-attachment: scroll;
+	}
+}
+
+@media only screen and (min-width:768px) {
+.{{ include.image }} {background:url(/img/single/{{ include.image }}/{{ include.image }}-1200.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   background-attachment: scroll;
+  	  height: 768px;
+		width:100%;}
+}
+
+@media only screen and (min-width:1200px) {
+.{{ include.image }} {background:url(/img/single/{{ include.image }}/{{ include.image }}-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  	  height: 768px;
+		width:100%;}
+}
+
+
+@media only screen and (min-width:1600px) {
+.{{ include.image }} {background:url(/img/single/{{ include.image }}/{{ include.image }}-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  	  height: 1024px;
+		width:100%;}
+}
+</style>
+
+{% include boxbreaker.html %}
+
+<div class="container-full">
+
+<div class="{{ include.image }} phototron jumbotron"></div>
+
+</div> 
+<div class="container">
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+	<p class="caption">{{ include.caption }}</p>
+</div>
+
+</div>
+</div>
+</div>
+
+{% include boxenter.html %}

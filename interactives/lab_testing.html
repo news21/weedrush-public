@@ -1,0 +1,95 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <title>Lab Testing</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/iframeResizer.contentWindow.min.js"></script>
+    <style>
+        .form-control {
+            font-family: Roboto;
+            font-size: 1em;
+        }
+        select.form-control {
+            margin-bottom: 15px;
+        }
+        h2.header {
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 32px;
+            padding-left: 10px;
+        }
+        .col-xs-8 {
+            font-family: Roboto Condensed;
+            font-weight: 700;
+            font-size: 1.3em;
+            text-align: left;
+            padding-left: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /*width: 35%;*/
+        }
+        .col-xs-4 {
+            font-family: Roboto Condensed;
+            font-weight: 400;
+            font-size: 1.3em;
+            text-align: right;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /*width: 35%;*/
+        }
+        #source {
+            font-family: Roboto Condensed;
+            font-size: .85em;
+            padding-left: 10px;
+        }
+        #textbox {
+            max-width: 850px;
+        }
+    </style>
+    <!-- Google Analytics: change UA-1988769-11 to be your site's ID. --> <script> (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new
+    Date; e=o.createElement(i);r=o.getElementsByTagName(i)[0]; e.src='https://www.google-analytics.com/analytics.js'; r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); ga('create','UA-1988769-11','auto');ga('send','pageview');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="starter-template" style="padding:5px">
+            <h2 class="header">Lab testing by state</h2>
+            <div id="source">Source: State laws and regulatory agencies</div>
+        </div>
+        <div class="col-md-8">
+            <select class="form-control" id="select-state" onchange="update_charts();">
+                <option value="#">Select a state</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DC">District of Columbia</option>
+                <option value="HI">Hawaii</option>
+                <option value="IL">Illinois</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MT">Montana</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="OR">Oregon</option>
+                <option value="RI">Rhode Island</option>
+                <option value="VT">Vermont</option>
+                <option value="WA">Washington</option>
+            </select>
+        </div>
+        <div id="textbox"></div><br /><br />
+    </div>
+    <script src="js/lab_testing.js"></script>
+  </body>
+</html>

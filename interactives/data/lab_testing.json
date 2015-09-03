@@ -1,0 +1,232 @@
+[
+  {
+    "state":"AK",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note":"Alaska's new marijuana control board will develop lab testing protocol and regulations for the state by November.",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"AZ",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note":"Marijuana testing labs exist and test marijuana on a voluntary basis.",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"CA",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note":"Laboratory exists on a voluntary basis.",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"CO",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"Yes",
+    "note":"Testing in Colorado is currently only required for recreational cannabis. Each type of testing is being rolled out gradually after labs partake in beta testing periods.",
+    "mycotoxin":"Yes",
+    "heavy_metals":"No",
+    "potency_testing":"Yes",
+    "residual_solvent":"Yes"
+  },
+  {
+    "state":"CT",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note":"Laboratory testing of cannabis is based on standards set out in the United States Pharmacoepia.",
+    "mycotoxin":"Yes",
+    "heavy_metals":"Yes",
+    "potency_testing":"Yes",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"DC",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"ME",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note":"Maine doesn't require any testing legally however state agencies would like to see it implemented.",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"WA",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note": "N/A",
+    "mycotoxin":"Yes",
+    "heavy_metals":"Yes",
+    "potency_testing":"Yes",
+    "residual_solvent":"Yes "
+  },
+  {
+    "state":"VT",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"RI",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"OR",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note": "N/A",
+    "mycotoxin":"Yes",
+    "heavy_metals":"No",
+    "potency_testing":"Yes",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"NY",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"NM",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"NJ",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"No",
+    "note":"Each strain has an initial test and then there are periodic, quality control tests.",
+    "mycotoxin":"Yes",
+    "heavy_metals":"Yes",
+    "potency_testing":"Yes",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"NH",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"NV",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note":"Nevada has 18 laboratories and is still working out which pesticides to test for.",
+    "mycotoxin":"Yes",
+    "heavy_metals":"Yes",
+    "potency_testing":"Yes",
+    "residual_solvent": "N/A"
+  },
+  {
+    "state":"MT",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note":"Montana had marijuana testing labs at one time but they no longer exist because they aren't protected from being charged with the posession of drugs.",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"MN",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note":"Two designated laboratories have been approved by the Department of Health to test medical cannabis, however, not a single ounce of product has been tested. One laboratory even claims medical cannabis testing may not be something they have time for. Currently developing testing standards based on other state's regulations",
+    "mycotoxin":"Yes",
+    "heavy_metals":"Yes",
+    "potency_testing":"Yes",
+    "residual_solvent":"No"
+  },
+  {
+    "state":"MI",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent": "N/A"
+  },
+  {
+    "state":"MA",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent": "N/A"
+  },
+  {
+    "state":"MD",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent": "N/A"
+  },
+  {
+    "state":"IL",
+    "medical_mj_testing_mandated":"Yes",
+    "pesticide":"Yes",
+    "note": "N/A",
+    "mycotoxin":"Yes",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent":"Yes"
+  },
+  {
+    "state":"HI",
+    "medical_mj_testing_mandated":"No",
+    "pesticide":"No",
+    "note": "N/A",
+    "mycotoxin":"No",
+    "heavy_metals":"No",
+    "potency_testing":"No",
+    "residual_solvent": "N/A"
+  }
+]

@@ -1,0 +1,112 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.law {
+background: url(/img/section-hero/law-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.law {background:url(/img/section-hero/law-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.law {background:url(/img/section-hero/law-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;}
+}
+
+@media only screen and (min-width:1600px) {
+.law {background:url(/img/section-hero/law-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+<div id="law" class="law jumbotron">
+<div class="container section-header">
+    <h1><a name="law"></a>LAW ENFORCEMENT</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>How marijuana is pushing the limits of legality.</h4></div>
+    </div>
+
+  </div>
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+
+<div class="row">
+          
+	  <div class="col-sm-4">
+	  
+	  	  <a href="{{ site.data.urls.california.url }}"><h3 class="media-heading small-headline">Medical marijuana brings bedlam to some California communities</h3></a>
+      <p>California’s medical marijuana industry is fraught with unlicensed dispensaries and illegal pot as voters prepare for possible recreational legalization next year. 
+</p>
+      </div>
+
+	  <div class="col-sm-4">
+	  
+	    <a href="{{ site.data.urls.newyork.url }}"><h3 class="media-heading small-headline">East New York: It's still a target for marijuana possession</h3></a>
+      <p>The New York City administration and police decriminalized minor marijuana possession, but the racial disparity within the violations persists.
+</p>
+      </div>
+      
+	  <div class="col-sm-4">
+  
+	<a href="{{ site.data.urls.possession.url }}"><h3 class="media-heading small-headline">Marijuana possession arrests charted over three decades</h3></a>
+  <p>Possession arrest rates doubled during the 1990s, and only recently began to subside. Explore data spanning 34 years to see how states compare.</p>
+  </div>
+      
+      </div> <!-- row -->
+<div class="row">
+
+  <div class="col-sm-4">
+       	<img src="/img/section-tease/law-enforcement-new.jpg" class="img-responsive">
+      </div>
+	  <div class="col-md-4">	  
+	   <a href="{{ site.data.urls.communities.url }}"><h3 class="media-heading small-headline">Avoyelles Parish: Where poverty, race and drugs collide </h3></a>
+      <p>Blacks in one Louisiana community are more likely than whites to be arrested for marijuana possession, and are frequent targets of the so-called “Jump-Out Boys."
+</p>
+</div>
+  <div class="col-md-4">
+	  <a href="{{ site.data.urls.duid.url }}"><h3 class="media-heading small-headline">Marijuana pushes the limits in the inexact science of DUID</h3></a>
+      <p>Law enforcement deals with impaired drivers every day. But discrepancies in legal limits and testing procedures vary from state to state.
+</p>
+      </div>
+      
+      
+      
+      
+          
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

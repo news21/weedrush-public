@@ -1,0 +1,139 @@
+
+
+<div class="container news21" style="padding-top: 20px;">
+<div class="row">
+
+<div class="col-sm-4">
+<h5>Previous National Projects</h5>
+<ul class="list-group">
+<li class="list-group-item"><a href="http://gunwars.news21.com"><h6>Gun Wars · 2014 </h6></a></li>
+  <li class="list-group-item"><a href="http://backhome.news21.com"><h6>Back Home · 2013 </h6></a></li>
+  <li class="list-group-item"><a href="http://votingrights.news21.com"><h6>Voting Rights in America · 2012</h6></a></li>
+  <li class="list-group-item"><a href="http://foodsafety.news21.com/"><h6>How Safe is Your Food? · 2011</h6></a></li>
+  <li class="list-group-item"><a href="http://national.news21.com/"><h6>Breakdown: Traveling Dangerously in America · 2010</h6></a></li>
+</ul>
+ </div>
+
+<div class="col-sm-2">
+<h5>School Projects</h5>
+<ul class="list-group">
+<li class="list-group-item"><a href="http://news21.com/news21-projects-directory/#2010"><h6>Changing America · 2010</h6></a></li>
+<li class="list-group-item"><a href="http://news21.com/news21-projects-directory/#2009"><h6>Changing America · 2009</h6></a></li>
+<li class="list-group-item"><a href="http://news21.com/news21-projects-directory/#2008"><h6>Election · 2008</h6></a></li>
+<li class="list-group-item"><a href="http://news21.com/news21-projects-directory/#2007"><h6>Faith in America · 2007</h6></a></li>
+<li class="list-group-item"><a href="http://news21.com/news21-projects-directory/#2006"><h6>Liberty vs. Security · 2006</h6></a></li>
+</ul> 
+</div>
+
+  <div class="col-sm-2">
+  <h5>About</h5>
+<ul class="list-group">
+  <li class="list-group-item"><a href="http://news21.com/about-news21/"><h6>News21</h6></a></li>
+  <li class="list-group-item"><a href="http://carnegie.org/programs/past-commissions-councils-and-task-forces/future-of-journalism-education/"><h6>Carnegie Corporation</h6></a></li>
+  <li class="list-group-item"><a href="http://www.knightfoundation.org/grants/20080709/"><h6>Knight Foundation</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/awards"><h6>Awards</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/jschools/"><h6>Join Our Team</h6></a></li>
+</ul> 
+</div>
+
+  <div class="col-sm-2">
+  <h5>Free Content</h5>
+<ul class="list-group">
+  <li class="list-group-item"><a href="http://news21.com/free-content"><h6>Creative Commons Use</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/code"><h6>Innovation</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/partners"><h6>Media Partners</h6></a></li>
+
+</ul> 
+</div>
+  <div class="col-sm-2">
+<ul class="list-group">
+<h5><a href="http://news21.com/educators/">Resources</a></h5>
+  <li class="list-group-item"><a href="http://news21.com/incubator-best-practices/"><h6>Setting Up a Program</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/how-it-works/"><h6>News21 Seminar</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/innovation-roundup/"><h6>News21 Newsroom</h6></a></li>
+  <li class="list-group-item"><a href="http://news21.com/best-practices/"><h6>Best Practices</h6></a></li>
+
+</ul> 
+</div>
+
+</div>
+  <div class="well well-sm">
+  <div class="row">
+  <div class="col-sm-2">
+  	<a href="http://news21.com"><img src="/img/logos/logo_news21_bw.png" /></a>
+  	</div>
+  	<div class="col-sm-2">Republish our work; it's all Creative Commons.
+  	</div>
+  	<div class="col-sm-2">
+  	<a href="http://www.carnegie.org/"><img src="/img/logos/carnegie.png" /></a>
+  	</div>
+  	<div class="col-sm-2">
+  	<a href="http://www.knightfoundation.org/"><img src="/img/logos/knight.png" /></a>
+  	</div>
+  	<div class="col-sm-4">
+  	<img src="/img/logos/cronkite.png" width="160" height="31" />
+  	</div>
+  	
+  	</div> <!-- /row -->
+  	</div> <!-- /well -->
+</div> <!-- /container -->
+
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{{ site.url }}/js/bootstrap.min.js"></script>
+
+
+
+{% if page.tshirt %}
+
+<script>
+$('#carousel-tshirt').carousel({
+  interval: false
+})
+
+    // Go to the second item
+
+    $("#intro").click(function(){
+        $("#carousel-tshirt").carousel(0);
+    });
+
+    $("#seed").click(function(){
+        $("#carousel-tshirt").carousel(1);
+    });
+    
+    $("#farm").click(function(){
+        $("#carousel-tshirt").carousel(2);
+    });
+    
+    $("#lab").click(function(){
+        $("#carousel-tshirt").carousel(3);
+    });
+	
+	$("#dispensary").click(function(){
+        $("#carousel-tshirt").carousel(4);
+    });
+    
+    $("#patient").click(function(){
+        $("#carousel-tshirt").carousel(5);
+    });
+
+</script>
+
+{% endif %}
+
+
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXXXX-XX','auto');ga('send','pageview');
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<div class="sections pull-right col-md-offset-1"">
+
+<h3>Sidebars</h3>
+
+<ul>
+{% for title in site.data.sidebars.[include.slug] %}
+
+
+<li><a href="{{ site.data.urls.[title.slug].url }}">{{ title['title'] }}</a></li>
+
+{% endfor %}
+</ul>
+</div>

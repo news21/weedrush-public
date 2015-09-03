@@ -1,0 +1,349 @@
+$blue: #6C8182;
+$gold: #DDAA30;
+$gray: #CBD4C0;
+
+@mixin debug() { 
+	border: 1px solid red;
+	color: yellow;
+}
+
+$titlefont: 'Roboto', 'Helvetica Neue', helvetica, sans-serif;
+$bodyfont: 'Roboto Slab', georgia, serif;
+$condensedfont: 'Roboto Condensed', 'Helvetica Neue', helvetica, sans-serif;
+
+/*
+Blue:  (6C8182/108, 129, 130) Navigation bar color, similar to the maroon on Gun Wars
+
+Gold:  (DDAA30/221, 170, 48) Pop-up quotes, accent color, maybe headlines
+
+White: (FFFFFF) Background for site
+
+Gray:  (CBD4C0/203, 212, 192) Fill in for text boxes and to alternate as secondary background color
+
+Black: (000000) Font color
+*/
+
+.bluebak {
+  background-color: $blue;
+}
+
+.goldbak {
+  background-color: $gold;
+}
+
+.graybak {
+  background-color: $gray;
+
+}
+
+.publishdate {
+	font-weight: bold;
+}
+
+.roomfornav {
+	margin-top: 50px;
+}
+
+.story-top {
+	padding-top: 20px;
+}
+
+
+h1, h2, h3 {
+	font-family: $titlefont;
+}
+
+h1 {
+	font-weight: bold;
+}
+body {
+font-family: $bodyfont;
+}
+
+
+.phototron-hero {
+	margin-bottom:0;
+	padding:0;
+	position: relative;
+}
+
+.herotitle {
+	position: absolute;
+	width: 90%;
+	left: 20px;
+}
+
+.herotitle h1 {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.herotitle h3 {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+
+.herotitle p {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 16px;
+	text-align: right;
+}
+
+.sections {
+	max-width: 300px;
+	border: 3px solid $gray;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-family: $titlefont;
+	margin-bottom: 10px;
+
+}
+
+.sections ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sections li {
+	padding-bottom: 10px;
+}
+
+.sections a {
+	color: $blue;
+	font-weight: bold;
+}
+
+.link-underline a {
+  border-bottom: 2px solid $gray;
+  box-shadow: inset 0 -5px 0 $gray;
+  color: inherit;
+  -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  text-decoration: none;
+}
+.link-underline a:hover, .link-underline a:focus, .link-underline a:active {
+  background: $gray;
+}
+
+.story h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+.btn-pin {
+  color: #fff;
+  background-color: $gold;
+  border-color: $gray;
+}
+
+.pull-pin {
+	text-align: center;
+}
+
+@media only screen and (max-width:480px) {
+	.gallery {
+		height: 570px;
+	}
+	.herotitle {
+		top: 20%;
+	}
+	.pull-content {
+	width: 100%;
+	}
+}
+
+@media only screen and (min-width:480px) {
+	.gallery {
+		height: 550px;
+	}
+	.herotitle {
+		top: 35%;
+	}
+	.pull-content {
+	width: 100%;
+	}
+
+}
+@media only screen and (min-width:768px) {
+	.gallery {
+		height: 760px;
+	}
+	.herotitle {
+		top: 50%;
+	}
+	.pull-content {
+	width: 100%;
+	}
+
+}
+@media only screen and (min-width:1200px) {
+	.gallery {
+		height: 740px;
+	}
+	.herotitle {
+		top: 65%;
+	}
+	.pull-content {
+	width: 500px;
+	}
+
+} 
+
+.fixscroll {
+	padding-bottom: 40px;
+}
+
+.includer {
+}
+
+.gridelement {
+	padding-top: 30px;
+}
+
+.media {
+	padding-top: 20px;
+}
+
+.media-object {
+	margin-right: 10px;
+}
+
+.news21 a {
+	color: black;
+}
+
+.news21 h5 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: $titlefont;
+}
+
+.credits .well {
+	margin-bottom: 0;
+}
+
+.credits .media {
+	margin-bottom: 0;
+}
+
+.credits {
+	padding-bottom: 40px;
+}
+
+.section-header {
+	color: white;
+	background: rgba(0,0,0,0.5);
+
+	text-align: left;
+	margin-top: 40px;
+	border: 1px solid white;
+}
+
+.section-header h4 {
+//	background: $gold;
+
+	padding-bottom: 15px;
+}
+
+.section-body a h3 {
+  color: black;
+  -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  text-decoration: none;
+}
+
+.section-body a:hover h3, .link-underline a:focus h3, .link-underline a:active h3 {
+  background: $gray;
+}
+
+.section-body {
+	padding-bottom: 30px;
+}
+
+.pinfooter {
+	background: $gray;
+	padding-top: 20px;
+}
+
+.socialfooter {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.creditsfooter {
+	padding-top: 20px;
+}
+
+.metapage {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.metapage a {
+  border-bottom: 2px solid $gray;
+  box-shadow: inset 0 -5px 0 $gray;
+  color: inherit;
+  -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  text-decoration: none;
+}
+.metapage a:hover, .link-underline a:focus, .link-underline a:active {
+  background: $gray;
+}
+
+.section-body a {
+  color: inherit;
+  -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  text-decoration: none;
+}
+.section-body a:hover, .link-underline a:focus, .link-underline a:active {
+  background: $gray;
+}
+
+
+.replacer {
+	padding-top: 30px;
+}
+
+.padder {
+	padding-top: 20px;
+}
+
+.phototron {
+	margin-bottom:0;
+	padding:0;
+	position: relative;
+}
+
+.frontnav-item a>.btn {
+	background: $gold;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+}
+
+.frontnav-item {
+	padding-bottom: 20px;
+	padding-left: 0;
+}
+
+.frontnav-item a {
+	text-decoration: none;
+	border-bottom: none;
+	box-shadow: none;
+}
+
+.frontnav-item a:hover>.btn {
+	color: black;
+	background: $gold;
+}
+
+.frontnav {
+	text-align: center;
+}

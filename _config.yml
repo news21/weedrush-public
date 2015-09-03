@@ -1,0 +1,23 @@
+# Site settings
+email: you@example.com
+title: "I am a clone of News21: America’s Weed Rush"
+description: "I am a clone of the 2015 News21 project America’s Weed Rush."
+socialimage: weedsocialimage.jpg
+publishdate: "Aug. 15, 2015"
+
+baseurl: ""
+url: "" # Put in your own FQDN here
+
+# Build settings
+markdown: redcarpet
+permalinks: pretty
+
+collections:
+  stories:
+    output: true
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+ 
+exclude: ['README.md']

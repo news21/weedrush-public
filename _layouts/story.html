@@ -1,0 +1,144 @@
+{% include header.html %}
+{% include nav.html %}
+
+{% if page.hero %}
+	<style type="text/css">
+	@media only screen and (max-width:480px) {
+	.{{ page.hero }} {
+	background: url(/img/hero-stories/{{ page.hero }}/{{ page.hero }}-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+	 background-attachment: scroll;
+			/* default height landscape*/
+			height: 480px;
+			width:100%;
+	  }
+
+	}
+
+	@media only screen and (min-width:480px) {
+	.{{ page.hero }} {background:url(/img/hero-stories/{{ page.hero }}/{{ page.hero }}-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+	 background-attachment: scroll;
+			/* default height landscape*/
+			height: 480px;
+			width:100%;
+			}
+
+	}
+	
+		@media only screen and (min-width:768px) {
+	.{{ page.hero }} {background:url(/img/hero-stories/{{ page.hero }}/{{ page.hero }}-1200.jpg) no-repeat center center fixed;   
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-attachment: scroll;
+	  height: 768px;
+		width:100%;
+		}
+
+	}
+
+	@media only screen and (min-width:1200px) {
+	.{{ page.hero }} {background:url(/img/hero-stories/{{ page.hero }}/{{ page.hero }}-1200.jpg) no-repeat center center fixed;   
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-attachment: scroll;
+	  height: 768px;
+		width:100%;
+		}
+
+	}
+
+	@media only screen and (min-width:1600px) {
+	.{{ page.hero }} {background:url(/img/hero-stories/{{ page.hero }}/{{ page.hero }}-2560.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-attachment: scroll;
+	  height: 1024px;
+		width:100%;
+		}
+	}
+	</style>
+	
+	<div class="phototron-hero {{ page.hero }}">
+		<div class="container-full herotitle">
+			<div class="row">
+			<div class="col-xs-12 herotitlebox">
+			<h1 class="animated fadeIn">{{ page.title }}</h1>
+			{% if page.byline %}
+			<h3 class="animated fadeIn">By {{ page.byline }} | News21</h3>
+			{% endif %}
+			{% if page.hero-credit %}
+			<p class="animated fadeIn">Credit: {{ page.hero-credit }}</p>
+			{% endif %}
+			</div>
+			</div>
+		</div>
+		</div>
+
+{% endif %}
+
+{% if page.hero %}
+<div class="container story-top story">
+{% else %}
+<div class="container story-top story roomfornav">
+{% endif %}
+
+{% unless page.hero %}
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+	<h1 class="animated fadeIn">{{ page.title }}</h1>
+{% if page.byline %}
+	<p class="animated fadeIn">By {{ page.byline }} | News21</p>
+{% endif %}
+</div>
+</div>
+
+{% endunless %}
+
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+{% if page.publishdate %}
+	<p class="publishdate">Published {{ page.publishdate }}</p>
+{% else %}
+	<p class="publishdate">Published {{ site.publishdate }}</p>
+{% endif %}
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+
+		  {{ content }}
+		  
+{% include storyfooter.html %}
+
+{% if page.section %}
+	{% if page.section == "politics" %}
+		{% include -politics.html %}
+	{% endif %}
+	{% if page.section == "law" %}
+		{% include -law.html %}
+	{% endif %}
+	{% if page.section == "medical" %}
+		{% include -medical.html %}
+	{% endif %}
+	{% if page.section == "money" %}
+		{% include -money.html %}
+	{% endif %}
+	{% if page.section == "recreational" %}
+		{% include -recreational.html %}
+	{% endif %}
+	{% if page.section == "science" %}
+		{% include -science.html %}
+	{% endif %}
+{% endif %}
+
+	</div> <!-- col-md-12 -->
+	</div> <!-- row -->
+</div> <!-- container -->
+
+{% include footer.html %}

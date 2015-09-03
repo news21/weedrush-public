@@ -1,0 +1,64 @@
+#carousel-tshirt {
+	.credit {
+		font-style: italic;
+	}	
+}
+
+
+
+.tshirt-nav {
+  background: rgba(221, 170, 48,0.95);
+  border-color: rgba(108, 129, 130,1);
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+.tshirt-nav .btn-link {
+	color: white;
+	font-weight: bold;
+	font-family: $titlefont;
+
+}
+
+.tshirt-item {
+	text-align: center;
+}
+
+@media only screen and (max-width:767px) {	
+	#carousel-tshirt {
+		margin-top: 130px;
+	}
+	.tshirt-nav .btn-link {
+		font-size: 16px;
+	}
+	.tshirt-nav {
+		height: 80px;
+	}		
+}
+@media only screen and (min-width:768px) {
+	#carousel-tshirt {
+		margin-top: 130px;
+	}
+	.tshirt-nav .btn-link {
+		font-size: 18px;
+	}
+		.tshirt-nav {
+		height: 80px;
+	}
+}
+
+@media only screen and (min-width:991px) {
+	#carousel-tshirt {
+		margin-top: 90px;
+	}
+	.tshirt-nav .btn-link {
+		font-size: 18px;
+	}
+		.tshirt-nav {
+		height: 40px;
+	}
+}
+
+

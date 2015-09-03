@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Marijuana-related Stop, Question and Frisk incidents</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <style type="text/css">
+            @media (max-width: 768px) {
+                html,body {height:975px}
+                #chartContainer {
+                    display:none;
+                }
+                #chartContainerMob {
+                    display:block;
+                }
+            }
+            @media (min-width: 768px) {
+                html,body {height:750px}
+                #chartContainerMob {
+                    display:none;
+                }
+                #chartContainer {
+                    display:block;
+                }
+            }
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.2em; 
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#chartContainer').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto Slab',
+                            fontWeight: 'bold',
+                            fontSize: '3em'
+                        },
+                        text: '',
+                        x: -20 //center
+                    },
+                    subtitle: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto Slab',
+                            fontSize: '1em'
+                        },
+                        text: 'Source: New York Police Department',
+                        x: -20
+                    },
+                    xAxis: {
+                         categories: ['Jan 2007', 'Feb 2007', 'Mar 2007', 'Apr 2007', 'May 2007', 'Jun 2007', 'Jul 2007', 'Aug 2007', 'Sep 2007', 'Oct 2007', 'Nov 2007', 'Dec 2007', 'Jan 2008', 'Feb 2008', 'Mar 2008', 'Apr 2008', 'May 2008', 'Jun 2008', 'Jul 2008', 'Aug 2008', 'Sep 2008', 'Oct 2008', 'Nov 2008', 'Dec 2008', 'Jan 2009', 'Feb 2009', 'Mar 2009', 'Apr 2009', 'May 2009', 'Jun 2009', 'Jul 2009', 'Aug 2009', 'Sep 2009', 'Oct 2009', 'Nov 2009', 'Dec 2009', 'Jan 2010', 'Feb 2010', 'Mar 2010', 'Apr 2010', 'May 2010', 'Jun 2010', 'Jul 2010', 'Aug 2010', 'Sep 2010', 'Oct 2010', 'Nov 2010', 'Dec 2010', 'Jan 2011', 'Feb 2011', 'Mar 2011', 'Apr 2011', 'May 2011', 'Jun 2011', 'Jul 2011', 'Aug 2011', 'Sep 2011', 'Oct 2011', 'Nov 2011', 'Dec 2011', 'Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014'],
+                         plotLines: [{
+                             value: 62,
+                             width: 1,
+                             color: '#DDAA30',
+                             dashStyle: 'dash',
+                             zIndex: 5,
+                             label: {
+                                useHTML: true,
+                                text: '<a href="http://www.nyclu.org/news/class-action-lawsuit-challenges-nypd-patrols-of-private-apartment-buildings" target="_blank" STYLE="text-decoration:none; color:black" ><strong>Class action lawsuit</strong></a>',
+                                verticalAlign: 'top',
+                                textAlign: 'center',
+                                rotation: 360, 
+                                x: 62,
+                                y: 15
+                            },
+                         }]
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Stop, question and frisk incidents'
+                        },
+                        stackLabels: {
+                            enabled: false,
+                            style: {
+                                fontWeight: 'bold',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                            }
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        reversed: true,
+                        align: 'center',
+                        x: 0,
+                        borderWidth: 0,
+                        layout: 'horizontal',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                enabled: false,
+                                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                style: {
+                                    textShadow: '0 0 3px black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'No summons or arrest issued',
+                        color: '#353F40',
+                        data: [914,739,863,929,996,888,903,1133,1180,1223,856,602,989,901,918,971,893,868,933,1053,1193,1346,1112,821,1273,1336,1397,1244,1424,1294,1496,1655,1712,1457,1232,843,1471,1143,1442,2005,1943,1740,1757,1839,1700,2051,1751,1152,1656,1875,2072,2272,2229,2261,2033,1993,2114,2243,2044,1880,2519,2499,2802,2386,1920,1350,1294,1623,1784,1798,997,1166,1510,1446,1245,879,870,556,379,196,120,132,145,145,168,157,174,125,160,85,120,133,78,116,65,22],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                            
+                    }, {
+                        name: 'Arrest made',
+                        color: '#6C8182',
+                        data: [160,150,243,325,229,162,208,233,277,340,185,178,289,199,293,253,256,212,250,296,285,312,193,139,283,298,305,252,303,293,291,289,329,270,232,157,259,247,330,430,406,378,385,413,435,487,411,249,479,440,471,504,419,419,379,432,339,399,390,366,467,397,464,406,427,290,294,295,257,286,147,180,207,218,241,179,137,140,105,53,56,81,56,77,83,66,48,56,50,52,67,96,61,56,44,25],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Summons issued',
+                        color: '#A1C2C2',
+                        data: [108,110,138,145,181,171,220,216,234,198,166,114,160,145,163,150,160,134,128,165,168,187,135,98,164,178,170,206,216,184,216,260,251,231,221,140,192,197,241,262,272,229,266,298,243,295,256,133,152,189,169,273,297,241,215,223,212,213,188,152,167,251,234,235,215,149,147,161,146,154,82,123,114,99,93,65,48,35,21,16,9,11,14,17,5,12,17,17,10,6,5,3,3,5,3,1],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }]
+                });
+            });
+            // Begin Bar Chart
+            // Begin Bar Chart
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                        }
+                });
+                $('#chartContainerMob').highcharts({
+                    chart: {
+                        type: 'bar'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        text: 'Stacked bar chart',
+                        style: {
+                            display: 'none',
+                        },
+                    },
+                    xAxis: {
+                        categories: ['Jan 2007', 'Feb 2007', 'Mar 2007', 'Apr 2007', 'May 2007', 'Jun 2007', 'Jul 2007', 'Aug 2007', 'Sep 2007', 'Oct 2007', 'Nov 2007', 'Dec 2007', 'Jan 2008', 'Feb 2008', 'Mar 2008', 'Apr 2008', 'May 2008', 'Jun 2008', 'Jul 2008', 'Aug 2008', 'Sep 2008', 'Oct 2008', 'Nov 2008', 'Dec 2008', 'Jan 2009', 'Feb 2009', 'Mar 2009', 'Apr 2009', 'May 2009', 'Jun 2009', 'Jul 2009', 'Aug 2009', 'Sep 2009', 'Oct 2009', 'Nov 2009', 'Dec 2009', 'Jan 2010', 'Feb 2010', 'Mar 2010', 'Apr 2010', 'May 2010', 'Jun 2010', 'Jul 2010', 'Aug 2010', 'Sep 2010', 'Oct 2010', 'Nov 2010', 'Dec 2010', 'Jan 2011', 'Feb 2011', 'Mar 2011', 'Apr 2011', 'May 2011', 'Jun 2011', 'Jul 2011', 'Aug 2011', 'Sep 2011', 'Oct 2011', 'Nov 2011', 'Dec 2011', 'Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014'],
+                    },
+                    yAxis: {
+                        opposite: true,
+                        min: 0,
+                        title: {
+                            text: 'Stop, question and frisk incidents'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        reversed: true,
+                        align: 'center',
+                        x: 0,
+                        layout: 'vertical',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        borderWidth: 1,
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+                    series: [{
+                        name: 'No summons or arrest issued',
+                        color: '#353F40',
+                        data: [914,739,863,929,996,888,903,1133,1180,1223,856,602,989,901,918,971,893,868,933,1053,1193,1346,1112,821,1273,1336,1397,1244,1424,1294,1496,1655,1712,1457,1232,843,1471,1143,1442,2005,1943,1740,1757,1839,1700,2051,1751,1152,1656,1875,2072,2272,2229,2261,2033,1993,2114,2243,2044,1880,2519,2499,2802,2386,1920,1350,1294,1623,1784,1798,997,1166,1510,1446,1245,879,870,556,379,196,120,132,145,145,168,157,174,125,160,85,120,133,78,116,65,22],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                            
+                    }, {
+                        name: 'Arrest made',
+                        color: '#6C8182',
+                        data: [160,150,243,325,229,162,208,233,277,340,185,178,289,199,293,253,256,212,250,296,285,312,193,139,283,298,305,252,303,293,291,289,329,270,232,157,259,247,330,430,406,378,385,413,435,487,411,249,479,440,471,504,419,419,379,432,339,399,390,366,467,397,464,406,427,290,294,295,257,286,147,180,207,218,241,179,137,140,105,53,56,81,56,77,83,66,48,56,50,52,67,96,61,56,44,25],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Summons issued',
+                        color: '#A1C2C2',
+                        data: [108,110,138,145,181,171,220,216,234,198,166,114,160,145,163,150,160,134,128,165,168,187,135,98,164,178,170,206,216,184,216,260,251,231,221,140,192,197,241,262,272,229,266,298,243,295,256,133,152,189,169,273,297,241,215,223,212,213,188,152,167,251,234,235,215,149,147,161,146,154,82,123,114,99,93,65,48,35,21,16,9,11,14,17,5,12,17,17,10,6,5,3,3,5,3,1],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Marijuana-related stop, question and frisk incidents<h2></div>
+        <div class="subhed">Source: New York Police Department</div>
+        <div id="chartContainer" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+        <div id="chartContainerMob" style="min-width: 310px; height: 1200px; margin: 0 auto"></div>
+    </body>
+</html>

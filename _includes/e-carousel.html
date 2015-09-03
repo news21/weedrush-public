@@ -1,0 +1,36 @@
+{% comment %}
+Videos for the front page carousel.
+
+To include: {% include e-carousel.html videofile="videofile" blurb="I am the blurb" link="/medical/"  %}
+
+Put carousel videos (.mp4, .webm, .jpg) in /carousel/
+
+{% endcomment %}
+
+{% comment %}
+
+<source src="/carousel/{{ include.videofile }}.webm" type="video/webm">
+ style="background: url(/carousel/{{ include.videofile }}.jpg) no-repeat; background-size: cover;"
+
+{% endcomment %}
+
+
+<div class="fill" style="background: url(/carousel/{{ include.videofile }}.jpg) no-repeat; background-size: cover;">
+
+<!--[if !IE]><!-->
+<video class="thevideo" autoplay loop>
+	<source src="/carousel/{{ include.videofile }}.mp4" type="video/mp4">
+</video>
+<!--<![endif]-->
+
+<div class="overlay col-sm-9 col-sm-offset-1">
+	<a href="{{ site.data.urls.sections.url }}#{{ include.link }}">
+	<img src="img/wr-white-500.png" alt="Weed Rush logo" width="200" class="animated slideInLeft" />
+	<h2 class="animated slideInLeft text-resize">{{ include.section }}</h2>
+	<h4 class="animated slideInLeft text-resize">{{ include.blurb }}</h4>
+	</a>
+
+	
+</div>
+
+</div>

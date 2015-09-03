@@ -1,0 +1,31 @@
+{% comment %}
+
+To include: {% include e-gif.html gif="alaska" %}
+
+{% endcomment %}
+
+{% include boxbreaker.html %}
+
+<div class="container-full">
+	<div class="row">
+		<div class="col-sm-12"> 
+
+<video autoplay loop style="background: url(/img/gif/{{ include.gif }}/{{ include.gif }}.jpg) no-repeat; background-size: cover; width: 100%;">
+	<source src="/img/gif/{{ include.gif }}/{{ include.gif }}.webm" type="video/webm">
+	<source src="//img/gif/{{ include.gif }}/{{ include.gif }}.mp4" type="video/mp4">
+</video>
+
+
+</div>
+</div> <!-- /container-full -->
+<div class="container">
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+	<p class="caption">{{ include.caption }}</p>
+</div>
+
+</div>
+</div>
+
+
+{% include boxenter.html %}

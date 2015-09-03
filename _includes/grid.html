@@ -1,0 +1,75 @@
+{% comment %}
+
+To include: {% include grid.html caption="I am the caption for the grid. (Joe Sartre | News21)" %}
+
+{% endcomment %}
+
+{% include boxbreaker.html %}
+
+<div class="includer">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_1.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_1.webm" type="video/webm">
+				<source src="/img/grid/LP_1.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_2.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_2.webm" type="video/webm">
+				<source src="/img/grid/LP_2.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+		</div> <!-- /row -->
+		<div class="row">
+		
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_3.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_3.webm" type="video/webm">
+				<source src="/img/grid/LP_3.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_4.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_4.webm" type="video/webm">
+				<source src="/img/grid/LP_4.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+		</div> <!-- /row -->
+		<div class="row">
+		
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_5.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_5.webm" type="video/webm">
+				<source src="/img/grid/LP_5.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+			<div class="col-sm-6 col-xs-12 gridelement">
+			<video autoplay loop style class="img-responsive" style="background: url(/img/grid/LP_6.jpg) no-repeat; background-size: cover;">
+				<source src="/img/grid/LP_6.webm" type="video/webm">
+				<source src="/img/grid/LP_6.mp4" type="video/mp4">
+			</video>
+			</div> <!-- /col -->
+
+		</div> <!-- /row -->
+</div> <!-- /container -->
+</div> <!-- /includer -->
+
+<div class="container">
+<div class="row">
+<div class="col-xs-9 col-xs-offset-1">
+	<p class="caption" style="text-align: right;">{{ include.caption }}</p>
+</div>
+
+
+</div>
+</div> <!-- /includer -->
+
+{% include boxenter.html %}

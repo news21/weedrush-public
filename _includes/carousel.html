@@ -1,0 +1,74 @@
+
+
+<div id="carousel-video" class="carousel slide front-carousel" data-ride="carousel">
+
+
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+
+
+
+    <div class="item active">
+
+{% include e-carousel.html videofile="politics" section="Marijuana Politics" blurb="Legal marijuana gains ground, but critics call it out of control." link="politics"  %}
+
+
+    </div>
+    <div class="item">
+{% include e-carousel.html videofile="medical" section="Medical Marijuana" blurb="Patients clamor for marijuana, legal or not." link="medical"  %}
+    </div>
+    <div class="item">
+
+{% include e-carousel.html videofile="recreational" section="Recreational Marijuana" blurb="The rush for weed is on — and so is the push to regulate it." link="recreational"  %}
+
+  </div>
+
+    <div class="item">
+{% include e-carousel.html videofile="science" section="Science" blurb="Is marijuana safe? It depends on who gives the answer." link="science"  %}
+    </div>
+    
+        <div class="item">
+{% include e-carousel.html videofile="money" section="Money" blurb="More money means more business — and more complications." link="money"  %}
+    </div>
+
+    <div class="item">
+{% include e-carousel.html videofile="law" section="Law Enforcement" blurb="How marijuana is pushing the limits of legality." link="law"  %}
+    </div>
+
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-video" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-video" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  
+
+    
+
+
+<div id="readmore">
+<a id="link" class="btn btn-link hidden-xs" href="#intro" role="button"><p style="font-weight: bold;">Get Started<br /><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
+</a>
+</div>
+
+</div>
+</div>
+
+<script>
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#link").click(function() {
+   scrollToAnchor('intro');
+});
+</script>

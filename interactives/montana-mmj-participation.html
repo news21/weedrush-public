@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Montana medical marijuana program participation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <style>
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#container').highcharts({
+                    credits: {
+                        text: 'Figures compiled using annual reports released each March.',
+                        href: '',
+                        position: {
+                            align: 'right',
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        style: {
+                            display: 'none',
+                        }
+                    },
+                    subtitle: {
+                        style: {
+                            display: 'none',
+                        }
+                    },
+                    xAxis: {
+                        categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015' ]
+                    },
+                    yAxis: {
+                        title: {
+                            enabled: false
+                        },
+                        min: 0,
+                        startOnTick: false,
+                        plotLines: [{
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }]
+                    },
+                    plotOptions: {
+                        series: {
+                            lineWidth: 3.5,
+                            marker: {
+                                radius: 1,
+                            }
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'top',
+                        borderWidth: 0
+                    },
+                    series: [{
+                        name: 'Patients',
+                        color: '#A1C2C2',
+                        data: [86,189,319,736,2074,12081,29948,11993,7384,8307,11240]
+                    }, {
+                        name: 'Providers',
+                        color: '#6C8182',
+                        data: [35,67,116,233,640,2797,4848,421,287,329,414]
+                    }, {
+                        name: 'Doctors',
+                        color: '#353F40',
+                        data: [69,100,118,150,186,295,360,254,198,207,214]
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Montana medical marijuana program participation<h2></div>
+        <div class="subhed">Source: Montana Department of Public Health and Human Services</div>
+        <div id="container" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+    </body>
+</html>

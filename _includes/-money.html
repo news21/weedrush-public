@@ -1,0 +1,115 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.money {
+background: url(/img/section-hero/money-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.money {background:url(/img/section-hero/money-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.money {background:url(/img/section-hero/money-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;}
+}
+
+@media only screen and (min-width:1600px) {
+.money {background:url(/img/section-hero/money-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+<div id="money" class="money navfix jumbotron">
+<div class="container section-header">
+    <h1><a name="money"></a>MONEY</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>More money means more business — and more complications.</h4></div>
+    </div>
+
+  </div>
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+<div class="row">
+	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.nationalbusiness.url }}"><h3 class="media-heading">Marijuana industry explodes, but complications abound</h3></a>
+      <p>As marijuana matures from a fledgling industry into serious business, problems mount for a field challenged by complex regulations and an uncertain future.
+</p>
+      </div>
+      
+	  <div class="col-sm-4">
+	 
+	 <a href="{{ site.data.urls.cannabisculture.url }}"><h3 class="media-heading small-headline">The culture around cannabis is changing — so are perceptions</h3></a>
+      <p>American support of cannabis is on the rise, as more money, increased exposure and smarter advocacy transforms public opinion around the drug.
+</p>
+	
+      </div>
+
+
+	  <div class="col-sm-4">
+	  
+	  	  <a href="{{ site.data.urls.banking.url }}"><h3 class="media-heading small-headline">Without banks, marijuana businesses amass stacks of cash</h3></a>
+      <p>Federal restrictions have made reliable banking nearly impossible for marijuana businesses, leading them to rely on safes and armed guards as they await reform.
+</p>
+      </div>
+	  <!-- Add the extra clearfix for only the required viewport -->
+	  <div class="clearfix visible-sm-block"></div>
+
+
+</div> <!-- row -->
+
+<div class="row">
+
+	  <div class="col-sm-4">
+	  
+	  	  <a href="{{ site.data.urls.workforce.url }}"><h3 class="media-heading small-headline">Growing marijuana industry grapples with labor dilemmas</h3></a>
+      <p>As the marijuana industry grows into a multibillion-dollar enterprise, workers and their bosses search for common ground on labor dilemmas. Unions have offered an organized alternative, but not everyone is buying in.
+</p>
+      </div>
+
+	  	  <div class="col-sm-4">
+ 	  <a href="{{ site.data.urls.minorities.url }}"><h3 class="media-heading small-headline">Experts: Minorities struggle in legal cannabis industry</h3></a>
+      <p>Aspiring marijuana business owners need access to large amounts of both financial and social capital. And experts said that’s proven difficult for everyone, but especially for many minorities to break into the business.
+</p>
+      </div>
+
+ <div class="col-sm-4">
+       	<img src="/img/section-tease/money-square.jpg" class="img-responsive">
+      </div>
+
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

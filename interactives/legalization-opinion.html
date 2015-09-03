@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Legalization attitudes over time</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <style>
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#container').highcharts({
+                    chart: {
+                        type: 'line'
+                    },
+                    credits: {
+                        text: 'Source: Gallup',
+                        href: '',
+                        position: {
+                            align: 'right',
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        style: {
+                            display: 'none',
+                        },
+                        text: null
+                    },
+                    legend: {
+                        align: 'center',
+                        x: 0,
+                        borderWidth: 0,
+                        layout: 'horizontal',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        shadow: false
+                    },
+                    subtitle: {
+                        style: {
+                            display: 'none',
+                        },
+                        text: null
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        dateTimeLabelFormats: { 
+                            year: '%Y'
+                        },
+                    },
+                    yAxis: {
+                        labels: {
+                            format: '{value}%'
+                        },
+                        title: {
+                            enabled: false
+                        },
+                        min: 0
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{point.x:%Y}</b><br>',
+                        pointFormat: '{series.name}: <b>{point.y}%</b><br/>',
+                        shared: true,
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: true
+                            }
+                        }
+                    },
+                    series: [{
+                        name: "Yes, legal",
+                        color: '#DDAA30',
+                        lineWidth: 3.5,
+                        marker: {
+                            symbol: 'circle',
+                            radius: 1,
+                        },
+                        data: [
+                            [Date.UTC(1969, 5, 15), 12],
+                            [Date.UTC(1972, 5, 15), 15],
+                            [Date.UTC(1973, 5, 15), 16],
+                            [Date.UTC(1977, 5, 15), 28],
+                            [Date.UTC(1979, 5, 15), 25],
+                            [Date.UTC(1980, 5, 15), 25],
+                            [Date.UTC(1985, 5, 15), 23],
+                            [Date.UTC(1995, 5, 15), 25],
+                            [Date.UTC(2000, 5, 15), 31],
+                            [Date.UTC(2001, 5, 15), 34],
+                            [Date.UTC(2003, 5, 15), 34],
+                            [Date.UTC(2005, 5, 15), 36],
+                            [Date.UTC(2009, 5, 15), 44],
+                            [Date.UTC(2010, 5, 15), 46],
+                            [Date.UTC(2011, 5, 15), 50],
+                            [Date.UTC(2012, 5, 15), 48],
+                            [Date.UTC(2013, 5, 15), 58]
+                        ]
+                    }, {
+                        name: "No, illegal",
+                        color: '#4A969E',
+                        lineWidth: 3.5,
+                        marker: {
+                            symbol: 'circle',
+                            radius: 1,
+                        },
+                        data: [
+                            [Date.UTC(1969, 5, 15), 84],
+                            [Date.UTC(1972, 5, 15), 81],
+                            [Date.UTC(1973, 5, 15), 78],
+                            [Date.UTC(1977, 5, 15), 66],
+                            [Date.UTC(1979, 5, 15), 70],
+                            [Date.UTC(1980, 5, 15), 70],
+                            [Date.UTC(1985, 5, 15), 73],
+                            [Date.UTC(1995, 5, 15), 73],
+                            [Date.UTC(2000, 5, 15), 64],
+                            [Date.UTC(2001, 5, 15), 62],
+                            [Date.UTC(2003, 5, 15), 64],
+                            [Date.UTC(2005, 5, 15), 60],
+                            [Date.UTC(2009, 5, 15), 54],
+                            [Date.UTC(2010, 5, 15), 50],
+                            [Date.UTC(2011, 5, 15), 46],
+                            [Date.UTC(2012, 5, 15), 50],
+                            [Date.UTC(2013, 5, 15), 39]
+                        ]
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Attitudes toward legalization over time<h2></div>
+        <div class="subhed">Do you think the use of marijuana should be made legal, or not?</div>
+        <div id="container" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+    </body>
+</html>

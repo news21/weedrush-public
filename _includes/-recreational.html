@@ -1,0 +1,124 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.recreational {
+background: url(/img/section-hero/recreational-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.recreational {background:url(/img/section-hero/recreational-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.recreational {background:url(/img/section-hero/recreational-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;
+          }
+}
+
+@media only screen and (min-width:1600px) {
+.recreational {background:url(/img/section-hero/recreational-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+<div id="recreational" class="recreational navfix jumbotron">
+<div class="container section-header">
+    <h1><a name="recreational"></a>RECREATIONAL</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>The rush for weed is on — and so is the push to regulate it.</h4></div>
+    </div>
+
+  </div>
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+<div class="row">
+	  <div class="col-sm-6">
+	  <a href="{{ site.data.urls.colorado.url }}"><h3 class="media-heading">Colorado on pot: America’s imperfect marijuana model</h3></a>
+      <p>Colorado has 883 licensed marijuana dispensaries. Though the state has seen an influx of money, some say it was not ready for commercialization.
+</p>
+      </div>
+    
+      
+	  <div class="col-sm-6">
+	  <a href="{{ site.data.urls.washington.url }}"><h3 class="media-heading small-headline">Washington merges recreational and medical marijuana </h3></a>
+      <p>Washington's recreational pot program is up and running with more than dispensaries. But it’s expensive and heavily taxed, drawing criticism from marijuana patients. 
+</p>
+
+      </div>
+
+</div> <!-- row -->
+
+<div class="row">
+
+	 	  <div class="col-sm-6">
+	     <a href="{{ site.data.urls.vashonisland.url }}"><h3 class="media-heading small-headline">Vashon Island: Where one man's legal pot is grown in paradise</h3></a>
+      <p>On Vashon Island, just a short ferry ride from Seattle, Scott Durkee is following his farmer’s passion: To legally grow pot for Washington’s new marijuana market.
+</p>
+	  </div>
+	  <div class="col-sm-6">
+	    <a href="{{ site.data.urls.oregon.url }}"><h3 class="media-heading small-headline">From seed to sale, Oregon's weed rush grows on its reputation</h3></a>
+      <p>Welcome to Oregon where possession and home-growing became legal on July 1, but sales won’t be legal until sometime next year – after the state makes new rules.  
+</p>
+      </div>
+      
+
+    
+
+</div> <!-- row -->
+<div class="row">
+      
+     	  	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.alaska.url }}"><h3 class="media-heading small-headline">Alaska struggles to roll out regulations</h3></a>
+      <p>Alaska became the third state to legalize recreational marijuana, and the first red state to do so. But Alaskans have been growing and using weed for years. 
+</p>
+</div>
+
+	  <div class="col-sm-4">	  
+	<a href="{{ site.data.urls.washingtondc.url }}"><h3 class="media-heading small-headline">The new world of weed in D.C. poses old problems</h3></a>
+      <p>Possession of small amounts of marijuana is legal in Washington, D.C. But with sales still illegal, residents are finding ways to get creative.
+</p>
+      </div>
+      
+       <div class="col-sm-4">
+       	<img src="/img/section-tease/recreational-new.jpg" class="img-responsive">
+      </div>
+      
+      
+      
+
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

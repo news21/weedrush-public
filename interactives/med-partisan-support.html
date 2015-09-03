@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Medical Marijuana Support</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <style>
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        reversed: true,
+                        align: 'center',
+                        verticalAlign: 'top',
+                    },
+                    xAxis: {
+                        categories: ['Overall', 'Democrats', 'Independents', 'Republicans']
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: null
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}%</b><br/>',
+                        shared: true,
+                        reversed: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'percent',
+                            events: {
+                                legendItemClick: function () {
+                                    return false;
+                                }
+                            }
+                        },
+                    allowPointSelect: false,
+                    },
+                    series: [{
+                        name: 'Oppose',
+                        data: [13, 8, 9, 23],
+                        color: '#DDAA30'
+                    }, {
+                        name: 'No answer',
+                        data: [6, 5, 5, 8],
+                        color: '#CBD4C0'
+                    }, {
+                        name: 'Support',
+                        data: [81, 87, 86, 69],
+                        color: '#95B56E'
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Medical Marijuana Support by Party<h2></div>
+        <div class="subhed">Source: Harris Polls</div>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Marijuana Conditions</title>
+    <!-- Google Analytics: change UA-1988769-11 to be your site's ID. --> <script> (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new
+    Date; e=o.createElement(i);r=o.getElementsByTagName(i)[0]; e.src='https://www.google-analytics.com/analytics.js'; r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); ga('create','UA-1988769-11','auto');ga('send','pageview');
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="col-md-10">
+            <select class="form-control" id="select-state" onchange="update_charts();">
+                <option value="#">Select a state</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DC">District of Columbia</option>
+                <option value="HI">Hawaii</option>
+                <option value="IL">Illinois</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MD">Maryland</option>
+                <option value="ME">Maine</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MT">Montana</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="OR">Oregon</option>
+                <option value="RI">Rhode Island</option>
+                <option value="VT">Vermont</option>
+                <option value="WA">Washington</option>
+            </select>
+        </div>
+        <div id="textbox"></div><br /><br />
+    </div>   
+    <script src="js/mm_conditions.js"></script>
+  </body>
+</html>

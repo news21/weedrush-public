@@ -1,0 +1,21 @@
+{% comment %}
+
+For the video page.
+
+To include: {% include video-vimeo.html video="72402483" caption="I am the caption for the video. (Joe Sartre | News21)" story="nevada" %}
+
+{% endcomment %}
+
+
+		<div class="row padder">
+			<div class="col-sm-7">
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/{{ include.video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=a0181d"></iframe>
+				</div>
+			</div> <!-- /7 -->
+			<div class="col-sm-5">
+				<h2>{{ include.title }}</h2>
+				<p>{{ include.caption }}</p>
+				<p><em><a href="{{ site.data.urls.[include.story].url }}">Read the story.</a></em></p>
+			</div> <!-- /5 -->			
+		</div><!-- /row -->

@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Marijuana-centric tweets by opinion</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700">
+        <style>
+            @media (max-width: 768px) {
+                html,body {height:975px}
+                #chartContainer {
+                    display:none;
+                }
+                #chartContainerMob {
+                    display:block;
+                }
+            }
+            @media (min-width: 768px) {
+                html,body {height:750px}
+                #chartContainerMob {
+                    display:none;
+                }
+                #chartContainer {
+                    display:block;
+                }
+            }
+            .hed {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                        }
+                });
+                $('#chartContainer').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    credits: {
+                        text: 'Source: Twitter',
+                        href: '',
+                        position: {
+                            align: 'right',
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto',
+                            fontWeight: 'bold',
+                            fontSize: '3em'
+                        },
+                        text: '',
+                        x: -20 //center
+                    },
+                    subtitle: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto',
+                            fontSize: '1em'
+                        },
+                        text: 'Source: New York Police Department',
+                        x: -20
+                    },
+                    xAxis: {
+                         categories: ['Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014', 'Jan 2015', 'Feb 2015', 'Mar 2015', 'Apr 2015', 'May 2015', 'Jun 2015'],
+                         plotLines: [{
+                             value: 62,
+                             width: 1,
+                             color: '#DDAA30',
+                             dashStyle: 'dash',
+                             zIndex: 5,
+                             label: {
+                                useHTML: true,
+                                text: '<a href="http://www.nyclu.org/news/class-action-lawsuit-challenges-nypd-patrols-of-private-apartment-buildings" target="_blank" STYLE="text-decoration:none; color:black" ><strong>Class action lawsuit</strong></a>',
+                                verticalAlign: 'top',
+                                textAlign: 'center',
+                                rotation: 360, 
+                                x: 62,
+                                y: 15
+                            },
+                         }]
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Number of tweets'
+                        },
+                        stackLabels: {
+                            enabled: false,
+                            style: {
+                                fontWeight: 'bold',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                            }
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        align: 'center',
+                        x: 0,
+                        borderWidth: 0,
+                        layout: 'horizontal',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                enabled: false,
+                                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                style: {
+                                    textShadow: '0 0 3px black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Favorable',
+                        color: '#DDAA30',
+                        data: [81173,124299,132861,123374,105146,103599,108799,103949,93466,70869,78939,56627,45878,51101,49983,53048,35678,27383,23637,44594,24438,23750,18079,20872,32546,26929,29130,25477,22290,20017,19572,14153,19399,23182,21566,21943,21411,31628,44504,54863,49473,49274],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Neutral',
+                        color: '#4A969E',
+                        data: [684,749,834,825,712,721,781,990,870,2444,9557,6181,4882,6020,10158,19886,16543,12348,13547,17740,20255,31157,27995,36445,64090,52385,61789,58510,52995,51558,79944,93643,82870,73808,83325,81144,82084,136453,172630,165283,131612,166471],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Unfavorable',
+                        color: '#95B56E',
+                        data: [1005,428,272,251,76,187,298,143,487,574,6581,2450,1433,1664,2782,6223,4827,3341,2520,912,2932,3646,2496,1903,4479,1749,2920,701,730,1330,1110,862,1438,1564,1015,558,542,469,52,64,326,108],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1, 
+
+                    }, {
+                        name: 'Uncategorized',
+                        color: '#6C8182',
+                        data: [72,32,24,88,53,2409,2401,5634,8965,14135,14082,19638,27327,19113,23225,20586,17643,18120,21812,32257,20453,11138,15686,11115,11136,12740,9899,13689,11352,7441,4129,3475,4851,4693,5173,6113,5266,6112,13721,21758,12339,13547],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,    
+                    }]
+                });
+            });
+            //Begin Bar Chart
+            //Begin Bar Chart
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                        }
+                });
+                $('#chartContainerMob').highcharts({
+                    chart: {
+                        type: 'bar'
+                    },
+                    credits: {
+                        text: 'Source: Twitter',
+                        href: '',
+                        position: {
+                            align: 'right',
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        text: 'Stacked bar chart',
+                        style: {
+                            display: 'none',
+                        },
+                    },
+                    xAxis: {
+                        categories: ['Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014', 'Jan 2015', 'Feb 2015', 'Mar 2015', 'Apr 2015', 'May 2015', 'Jun 2015'],
+                    },
+                    yAxis: {
+                        opposite: true,
+                        min: 0,
+                        title: {
+                            text: 'Number of tweets'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        reversed: true,
+                        align: 'center',
+                        x: 0,
+                        layout: 'vertical',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        borderWidth: 1,
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+                    series: [{
+                        name: 'Favorable',
+                        color: '#DDAA30',
+                        data: [81173,124299,132861,123374,105146,103599,108799,103949,93466,70869,78939,56627,45878,51101,49983,53048,35678,27383,23637,44594,24438,23750,18079,20872,32546,26929,29130,25477,22290,20017,19572,14153,19399,23182,21566,21943,21411,31628,44504,54863,49473,49274],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Neutral',
+                        color: '#4A969E',
+                        data: [684,749,834,825,712,721,781,990,870,2444,9557,6181,4882,6020,10158,19886,16543,12348,13547,17740,20255,31157,27995,36445,64090,52385,61789,58510,52995,51558,79944,93643,82870,73808,83325,81144,82084,136453,172630,165283,131612,166471],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Unfavorable',
+                        color: '#95B56E',
+                        data: [1005,428,272,251,76,187,298,143,487,574,6581,2450,1433,1664,2782,6223,4827,3341,2520,912,2932,3646,2496,1903,4479,1749,2920,701,730,1330,1110,862,1438,1564,1015,558,542,469,52,64,326,108],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1, 
+
+                    }, {
+                        name: 'Uncategorized',
+                        color: '#6C8182',
+                        data: [72,32,24,88,53,2409,2401,5634,8965,14135,14082,19638,27327,19113,23225,20586,17643,18120,21812,32257,20453,11138,15686,11115,11136,12740,9899,13689,11352,7441,4129,3475,4851,4693,5173,6113,5266,6112,13721,21758,12339,13547],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,    
+                    }]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <div class="hed"><h2>Marijuana-centric tweets by opinion<h2></div>
+        <div class="subhed">Sentiment analysis of tweets containing the hashtags #cannabis, #marijuana, #weed and #pot, using the social network analystics software ForSight by Crimson Hexagon.</div>
+        <div id="chartContainer" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+        <div id="chartContainerMob" style="min-width: 310px; height: 1200px; margin: 0 auto"></div>
+    </body>
+</html>

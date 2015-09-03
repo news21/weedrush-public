@@ -1,0 +1,29 @@
+{% comment %}
+
+{% include e-interactive-js.html path="example" %}
+
+{% endcomment %}
+
+{% include boxbreaker.html %}
+
+
+<style>
+    iframe {
+        width:100%;
+    }
+</style>
+<div class="container-full">
+
+<iframe src="/interactives/{{ include.path }}.html" scrolling="no" frameborder="0"></iframe>
+
+</div>
+<script type="text/javascript" src="/js/iframeResizer.min.js"></script>
+<script>
+    iFrameResize({
+        autoResize: true,
+        heightCalculationMethod: 'lowestElement'
+        // widthCalculationMethod: 'max'
+    });
+</script>
+
+{% include boxenter.html %}

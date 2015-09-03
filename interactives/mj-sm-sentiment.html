@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Marijuana-related Stop, Question and Frisk incidents</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/iframeResizer.contentWindow.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab:400,700">
+        <style>
+            @media (max-width: 768px) {
+                html,body {height:975px}
+                #chartContainer {
+                    display:none;
+                }
+                #chartContainerMob {
+                    display:block;
+                }
+            }
+            @media (min-width: 768px) {
+                html,body {height:750px}
+                #chartContainerMob {
+                    display:none;
+                }
+                #chartContainer {
+                    display:block;
+                }
+            }
+            .hed {
+                font-family: Roboto Slab;
+                font-weight: 700;
+                font-size: 1.5em;   
+                text-align: center;
+                margin-bottom: -1em;
+                color: #303030;
+            }
+            .subhed {
+                font-family: Roboto Condensed;
+                font-weight: 400;
+                font-size: 1em; 
+                text-align: center; 
+                margin-bottom: .5em;    
+                color: #303030;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#chartContainer').highcharts({
+                    chart: {
+                        type: 'column',
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto Slab',
+                            fontWeight: 'bold',
+                            fontSize: '3em'
+                        },
+                        text: '',
+                        x: -20 //center
+                    },
+                    subtitle: {
+                        style: {
+                            display: 'none',
+                            fontFamily: 'Roboto Slab',
+                            fontSize: '1em'
+                        },
+                        text: 'Source: New York Police Department',
+                        x: -20
+                    },
+                    xAxis: {
+                         categories: ['Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014', 'Jan 2015', 'Feb 2015', 'Mar 2015', 'Apr 2015', 'May 2015', 'Jun 2015'],
+                         plotLines: [{
+                             value: 62,
+                             width: 1,
+                             color: '#DDAA30',
+                             dashStyle: 'dash',
+                             zIndex: 5,
+                             label: {
+                                useHTML: true,
+                                text: '<a href="http://www.nyclu.org/news/class-action-lawsuit-challenges-nypd-patrols-of-private-apartment-buildings" target="_blank" STYLE="text-decoration:none; color:black" ><strong>Class action lawsuit</strong></a>',
+                                verticalAlign: 'top',
+                                textAlign: 'center',
+                                rotation: 360, 
+                                x: 62,
+                                y: 15
+                            },
+                         }]
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Number of Social Media Posts'
+                        },
+                        stackLabels: {
+                            enabled: false,
+                            style: {
+                                fontWeight: 'bold',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                            }
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        align: 'center',
+                        x: 0,
+                        borderWidth: 0,
+                        layout: 'horizontal',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                enabled: false,
+                                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                style: {
+                                    textShadow: '0 0 3px black'
+                                }
+                            }
+                        }
+                    },
+                    series: [ {
+                        name: 'Money/Business',
+                        color: '#DDAA30',
+                        data: [776,667,690,849,807,1035,747,662,843,736,604,1994,562,697,1776,4127,4201,2398,3562,4496,5272,13686,15034,16190,25615,22641,28923,30523,26938,25723,46359,54247,48388,38057,48885,47328,40857,92532,122772,111595,79307,108597],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }, {
+                        name: 'Advocacy/Politics',
+                        color: '#95B56E',
+                        data: [10064,27595,27073,20288,15010,10785,22340,21411,19655,16124,43142,18372,18694,18968,25883,30446,17121,14293,15570,41567,25239,20652,17660,28668,63221,41589,45815,39212,36993,31667,39822,35382,40958,42628,45596,41273,48980,51232,63704,82135,84867,77773],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }, {
+                        name: 'General Info/Qs',
+                        color: '#967421',
+                        data: [2897,2803,4212,3010,1987,3229,2124,3061,3120,3296,4289,4129,3577,5823,8445,9999,11586,9663,9139,4504,8818,14783,9704,8708,11839,13103,14173,11544,8380,11805,11258,9312,8075,15025,7037,10978,13014,14419,21347,16506,10530,9414],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }, {
+                        name: 'Health',
+                        color: '#62C7D1',
+                        data: [44452,55027,59668,60567,44865,48955,43918,39153,41736,30705,26312,26432,21081,19731,17974,24062,18283,12578,10538,12649,9379,9300,9310,9617,8412,11822,12492,12303,11459,10195,7264,13148,10294,7008,9137,9695,6309,16389,22944,26045,16589,28626],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }, {
+                        name: 'Nonsense/Off-topic',
+                        color: '#6C8182',
+                        data: [24735,39415,42338,39819,43308,42904,43145,46425,38426,37152,34809,33964,35605,32674,32069,31106,23498,22257,22709,32285,19366,11243,12529,7129,3156,4637,2327,4787,3585,946,54,45,840,528,419,481,146,93,140,5684,2452,4972],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                    }, ]
+                });
+            });
+            $(function () {
+                Highcharts.setOptions({
+                    chart: {
+                        style: {
+                            fontFamily: 'Roboto Condensed'
+                        }
+                    },
+                    lang: {
+                        thousandsSep: ','
+                    }
+                });
+                $('#chartContainerMob').highcharts({
+                    chart: {
+                        type: 'bar'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    title: {
+                        text: 'Stacked bar chart',
+                        style: {
+                            display: 'none',
+                        },
+                    },
+                    xAxis: {
+                        categories: ['Jan 2012', 'Feb 2012', 'Mar 2012', 'Apr 2012', 'May 2012', 'Jun 2012', 'Jul 2012', 'Aug 2012', 'Sep 2012', 'Oct 2012', 'Nov 2012', 'Dec 2012', 'Jan 2013', 'Feb 2013', 'Mar 2013', 'Apr 2013', 'May 2013', 'Jun 2013', 'Jul 2013', 'Aug 2013', 'Sep 2013', 'Oct 2013', 'Nov 2013', 'Dec 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014', 'May 2014', 'Jun 2014', 'Jul 2014', 'Aug 2014', 'Sep 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014', 'Jan 2015', 'Feb 2015', 'Mar 2015', 'Apr 2015', 'May 2015', 'Jun 2015'],
+                    },
+                    yAxis: {
+                        opposite: true,
+                        min: 0,
+                        title: {
+                            text: 'Number of Social Media Posts'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Highcharts.numberFormat(this.value, 0, '', ',');
+                            }
+                        }
+                    },
+                    legend: {
+                        reversed: false,
+                        align: 'center',
+                        x: 0,
+                        layout: 'vertical',
+                        verticalAlign: 'top',
+                        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                        borderColor: '#CCC',
+                        borderWidth: 1,
+                        shadow: false
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+                    series: [ {
+                        name: 'Money/Business',
+                        color: '#DDAA30',
+                        data: [776,667,690,849,807,1035,747,662,843,736,604,1994,562,697,1776,4127,4201,2398,3562,4496,5272,13686,15034,16190,25615,22641,28923,30523,26938,25723,46359,54247,48388,38057,48885,47328,40857,92532,122772,111595,79307,108597],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Advocacy/Politics',
+                        color: '#95B56E',
+                        data: [10064,27595,27073,20288,15010,10785,22340,21411,19655,16124,43142,18372,18694,18968,25883,30446,17121,14293,15570,41567,25239,20652,17660,28668,63221,41589,45815,39212,36993,31667,39822,35382,40958,42628,45596,41273,48980,51232,63704,82135,84867,77773],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1, 
+
+                    }, {
+                        name: 'General Info/Qs',
+                        color: '#967421',
+                        data: [2897,2803,4212,3010,1987,3229,2124,3061,3120,3296,4289,4129,3577,5823,8445,9999,11586,9663,9139,4504,8818,14783,9704,8708,11839,13103,14173,11544,8380,11805,11258,9312,8075,15025,7037,10978,13014,14419,21347,16506,10530,9414],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+
+                    }, {
+                        name: 'Health',
+                        color: '#62C7D1',
+                        data: [44452,55027,59668,60567,44865,48955,43918,39153,41736,30705,26312,26432,21081,19731,17974,24062,18283,12578,10538,12649,9379,9300,9310,9617,8412,11822,12492,12303,11459,10195,7264,13148,10294,7008,9137,9695,6309,16389,22944,26045,16589,28626],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,
+                        
+                    }, {
+                        name: 'Nonsense/Off-topic',
+                        color: '#6C8182',
+                        data: [24735,39415,42338,39819,43308,42904,43145,46425,38426,37152,34809,33964,35605,32674,32069,31106,23498,22257,22709,32285,19366,11243,12529,7129,3156,4637,2327,4787,3585,946,54,45,840,528,419,481,146,93,140,5684,2452,4972],
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 1,       
+                    }, ]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <script src="js/highcharts.js"></script>
+        <!-- <script src="js/modules/exporting.js"></script> -->
+        <div class="hed"><h2>Marijuana-centric Social Media Posts by Topic<h2></div>
+        <div class="subhed">Source: Twitter, Facebook, Instagram</div>
+        <div id="chartContainer" style="min-width: 310px; height: 600px; margin: 0 auto"></div>
+        <div id="chartContainerMob" style="min-width: 310px; height: 1200px; margin: 0 auto"></div>
+    </body>
+</html>

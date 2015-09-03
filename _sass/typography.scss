@@ -1,0 +1,286 @@
+.story {
+	font-family: $bodyfont;
+}
+
+.story h2 {
+	font-weight: bold;
+}
+
+.caption {
+	font-family: $titlefont;
+	margin-top: 20px;
+	font-style: italic;
+	color: $blue;
+}
+
+
+.pullquote {
+	font-family: $condensedfont;
+	font-size: 38px;
+	color: black;
+}
+
+.pullquote-background {
+	background: $gray;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.section-header h1 {
+	text-shadow: 1px 1px black;
+	margin-bottom: 0;
+}
+
+.overlay h2 {
+	font-weight: bold;
+}
+
+// Typography for breakpoints
+	@media only screen and (max-width:480px) {
+		.story p {
+			font-size: 14px;
+			line-height: 20px;
+			padding-bottom: 10px;
+		}
+		.section-body p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.section-body h3 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.story li {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.overlay h2 {
+			font-size: 32px;
+		}	
+		.overlay h4 {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		h1 {
+			font-size: 28px;
+		}
+		.story h2 {
+			font-size: 22px;
+		}
+		.metapage h1 {
+			font-size: 22px;
+		}
+		.metapage h2 {
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.metapage h4 {
+			font-size: 16px;
+		}
+		.metapage p {
+			font-size: 16px;
+		}
+		.frontnav-item>.btn {
+			font-size: 14px;
+		}
+
+	}
+
+	@media only screen and (min-width:480px) {
+		.story p {
+			font-size: 14px;
+			padding-bottom: 10px;
+		}
+		.section-body p {
+			font-size: 14px;
+		}
+		.section-body h3 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.story li {
+		font-size: 14px;
+		line-height: 20px;
+		}
+		.overlay h2 {
+			font-size: 32px;
+		}	
+		.overlay h4 {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		.caption {
+			font-size: 14px;
+		}
+		.story h2 {
+			font-size: 22px;
+		}
+		.metapage h1 {
+			font-size: 22px;
+		}
+		.metapage h2 {
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.metapage h4 {
+			font-size: 16px;
+		}
+		.metapage p {
+			font-size: 16px;
+		}
+		.frontnav-item>.btn {
+			font-size: 16px;
+		}
+	}
+	
+		@media only screen and (min-width:768px) {
+		.story p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.section-body p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.section-body h3 {
+			font-size: 22px;
+			line-height: 30px;
+		}
+		.story li {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.overlay h2 {
+			font-size: 48px;
+		}	
+		.overlay h4 {
+			font-size: 32px;
+			line-height: 42px;
+		}
+		h1 {
+			font-size: 38px;
+		}
+		.caption {
+			font-size: 16px;
+		}
+		.story h2 {
+			font-size: 24px;
+		}
+		.metapage h1 {
+			font-size: 26px;
+		}
+		.metapage h2 {
+			font-size: 26px;
+			font-weight: bold;
+		}
+		.metapage h4 {
+			font-size: 16px;
+		}
+		.metapage p {
+			font-size: 16px;
+		}
+		.frontnav-item>.btn {
+			font-size: 16px;
+		}
+	}
+
+	@media only screen and (min-width:1200px) {
+		.story p {
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.section-body p {
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.section-body h3 {
+			font-size: 30px;
+			line-height: 40px;
+		}
+		.story li {
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.overlay h2 {
+			font-size: 72px;
+		}	
+		.overlay h4 {
+			font-size: 44px;
+			line-height: 58px;
+		}
+		h1 {
+			font-size: 48px;
+		}
+		.caption {
+			font-size: 18px;
+		}
+		.story h2 {
+			font-size: 32px;
+		}
+		.metapage h1 {
+			font-size: 32px;
+		}
+		.metapage h2 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+		.metapage h4 {
+			font-size: 20px;
+		}
+		.metapage p {
+			font-size: 20px;
+		}
+		.frontnav-item>.btn {
+			font-size: 16px;
+		}
+
+	}
+
+	@media only screen and (min-width:1600px) {
+		.story p {
+			font-size: 18px;
+			line-height: 34px;
+		}
+		.section-body p {
+			font-size: 18px;
+			line-height: 34px;
+		}
+		.section-body h3 {
+			font-size: 36px;
+			line-height: 44px;
+		}
+		.story li {
+			font-size: 18px;
+			line-height: 34px;
+		}
+		.overlay h2 {
+		font-size: 72px;
+		}	
+		.overlay h4 {
+			font-size: 44px;
+			line-height: 58px;
+		}
+		.caption {
+			font-size: 18px;
+		}
+		.story h2 {
+			font-size: 36px;
+		}
+		.metapage h1 {
+			font-size: 32px;
+		}
+		.metapage h2 {
+			font-size: 32px;
+		}
+		.metapage h4 {
+			font-size: 24px;
+		}
+		.metapage p {
+			font-size: 24px;
+		}
+		.frontnav-item>.btn {
+			font-size: 16px;
+		}
+	}
+// End typography breakpoints

@@ -1,0 +1,157 @@
+example: 
+- title: "First section right here"
+  anchor: "first"
+- title: "I am the second section"
+  anchor: "second"
+
+cali:
+- title: "Cali section1"
+  anchor: "c1"
+- title: "Cali second section"
+  anchor: "c2"
+  
+montana:
+- title: "A medical marijuana program in turmoil"
+  anchor: "m1"
+- title: "The remnants of the raids"
+  anchor: "m2"
+- title: "Still selling, but quietly, this time"
+  anchor: "m3"
+- title: "Buying illegally outside the system"
+  anchor: "m4"
+- title: "Hanging on, industry faces uncertain future"
+  anchor: "m5"
+  
+colorado:
+- title: "No typical smoker"
+  anchor: "co1"
+- title: "Law enforcement displeased with legal weed"
+  anchor: "co2"
+  
+healthandsafety:
+- title: "Testing advocates: ‘There’s obviously a gap’"
+  anchor: "hs1"
+- title: "Official: Testing ‘not worth the grief’"
+  anchor: "hs2"
+- title: "Ensuring products are ‘clean’"
+  anchor: "hs3"
+- title: "Getting it right"
+  anchor: "hs4"
+
+nationalbusiness:
+- title: "Dispensaries and cultivators not only ones making money"
+  anchor: "nb1"
+- title: "As acceptance spreads, industry matures"
+  anchor: "nb2"
+- title: "Headaches abound for marijuana entrepreneurs"
+  anchor: "nb3"
+  
+minorities:
+- title: "Marijuana industry poised to bring in billions"
+  anchor: "mi1"
+- title: "Criminal records hold people back"
+  anchor: "mi2"
+- title: "Financial barriers tough to overcome"
+  anchor: "mi3"
+- title: "Experts: Some minorities may lack know-how, influence"
+  anchor: "mi4"
+
+nevada:
+- title: "Nevada officials try to ‘clean up’ image"
+  anchor: "n1"
+- title: "Pesticide regulations slow down process"
+  anchor: "n2"
+- title: "Home growers, delivery services fill gap"
+  anchor: "n3"
+- title: "State has ‘massive potential’ for pot tourism"
+  anchor: "n4"
+  
+research:
+- title: "Spending disparity"
+  anchor: "r1"
+- title: "Schedule 1"
+  anchor: "r2"
+- title: "Applying to research"
+  anchor: "r3"
+- title: "Current research"
+  anchor: "r4"
+
+sustainability:
+- title: "Water"
+  anchor: "s1"
+- title: "Soil"
+  anchor: "s2"
+- title: "Energy"
+  anchor: "s3"
+- title: "The future"
+  anchor: "s4"
+
+dc:
+- title: "Business opportunities — and limitations"
+  anchor: "dc1"
+- title: "The path to decriminalization"
+  anchor: "dc2"
+- title: "Police and public safety"
+  anchor: "dc3"
+- title: "A growing medical marijuana program"
+  anchor: "dc4"
+
+duid:
+- title: "Flaws in testing and a lack of science"
+  anchor: "duid1"
+- title: "The other side of the story: Law enforcement efforts"
+  anchor: "duid2"
+- title: "Prevention and awareness"
+  anchor: "duid3"
+
+edibles:
+- title: "Concentrates drastically increase THC potency"
+  anchor: "e1"
+- title: "Overconsumption can lead to hospitalizations"
+  anchor: "e2"
+- title: "Concentrates offer a discreet way to consume marijuana"
+  anchor: "e3"
+- title: "Officials: Products pose a ‘challenge’"
+  anchor: "e4"
+
+arizona:
+- title: "Critics: Medical marijuana cards too easy to obtain"
+  anchor: "a1"
+- title: "Statistics show cartels, crime not impacted"
+  anchor: "a2"
+- title: "Revenue and regulations prove challenging to track"
+  anchor: "a3"
+- title: "Groups look ahead to potential recreational legalization"
+  anchor: "a4"
+  
+cannabisculture:
+- title: "Access to media, changing message help shift culture"
+  anchor: "cc1"
+- title: "Ideals of ‘love’ and ‘compassion’ shift with commercialization"
+  anchor: "cc2"
+- title: "Advocacy groups become larger, more sophisticated"
+  anchor: "cc3"
+  
+south:
+- title: "Chester, South Carolina"
+  anchor: "south1"
+- title: "Baton Rouge, Louisiana"
+  anchor: "south2"
+- title: "Beaufort, South Carolina"
+  anchor: "south3"
+- title: "Chester, South Carolina"
+  anchor: "south4"
+- title: "Myrtle Beach, South Carolina"
+  anchor: "south5"
+- title: "Atlanta"
+  anchor: "south6"
+
+washington:
+- title: "Cost"
+  anchor: "w1"
+- title: "Medical legalization"
+  anchor: "w2"
+- title: "Possession limits"
+  anchor: "w3"
+- title: "Collectives"
+  anchor: "w4"

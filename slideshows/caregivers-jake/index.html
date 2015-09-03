@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galleria</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="{{ site.url }}/js/jquery-1.11.3.min.js"><\/script>')</script>
+	<script src="/js/galleria-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link href="/slideshows/-style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+<style type="text/css">
+body, html {
+	padding: 0;
+	margin-right: 15px;
+	font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+
+@media only screen and (max-width:480px) {
+	.gallery {
+		height:370px;
+	}
+	.gallerycaption {
+		font-size: 14px;
+		line-height: 22px;
+	}	
+}
+
+@media only screen and (min-width:480px) {
+	.gallery {
+		height: 600px;
+	}
+	.gallerycaption {
+		font-size: 14px;
+		line-height: 22px;
+	}	
+}
+
+@media only screen and (min-width:768px) {
+	.gallery {
+		height: 600px;
+	}
+	.gallerycaption {
+		font-size: 16px;
+		line-height: 28px;
+	}	
+}
+
+@media only screen and (min-width:1200px) {
+	.gallery {
+		height: 770px;
+	}
+	.gallerycaption {
+		font-size: 16px;
+		line-height: 28px;
+	}	
+
+}                 
+</style>
+
+
+<div class="container-full">
+<div class="row">
+<div class="col-xs-12">
+	<div class="gallery"></div>
+</div> <!-- /xs-12 -->
+</div>
+<div class="row">
+<div class="col-xs-12">
+<p class="gallerycaption"></p>
+</div>
+</div>
+<script>
+    $.getJSON('/slideshows/caregivers-jake/caregivers-jake.json', function(data) {
+		Galleria.run('.gallery', {
+			dataSource: data
+		});
+		Galleria.ready(function() {
+			console.log("in galleria ready");
+			var gallery = this, data;
+			this.bind('image', function(e) {
+			data = e.galleriaData;
+			$('.gallerycaption').html( data.description );
+		});
+		
+	});
+			Galleria.ready(function(options) {
+			var galleria = this;
+			galleria.bind('fullscreen_enter', function(e) {
+				$('.galleria-info-description').css('display','inline');
+			});
+		});
+		Galleria.configure({
+		_showPopout: false
+	});
+
+	
+	
+	
+	}).fail (function() {
+		console.log("Gallery load failed.");
+	});
+</script>
+
+		<script>
+			Galleria.loadTheme('/classic/galleria.classic.min.js');
+    </script>
+</body>

@@ -1,0 +1,119 @@
+
+{% include boxbreaker.html %}
+
+{% unless page.section %}
+
+
+
+<style type="text/css">
+
+@media only screen and (max-width:480px) {
+.politics {
+background: url(/img/section-hero/politics-768.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+.politics {background:url(/img/section-hero/politics-1200.jpg) no-repeat center center fixed;   -webkit-background-size: cover;
+ background-attachment: scroll;
+        /* default height landscape*/
+        height: 468px;
+        width:100%;
+        }
+}
+
+@media only screen and (min-width:1200px) {
+.politics {background:url(/img/section-hero/politics-1600.jpg) no-repeat center center fixed;   
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+          height: 768px;}
+}
+
+@media only screen and (min-width:1600px) {
+.politics {background:url(/img/section-hero/politics-2560.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+}
+</style>
+
+<div id="politics" class="politics navfix jumbotron">
+<div class="container section-header">
+
+    <h1><a name="politics"></a>POLITICS</h1>
+    <div class="row">
+    	<div class="col-xs-12"><h4>Legal marijuana gains ground, but critics call it out of control.</h4></div>
+    </div>
+
+  </div>
+
+
+</div> 
+
+{% endunless %}
+
+<div class="container section-body" role="main">
+
+{% if page.section %}
+<hr />
+<h2></h2>
+
+{% endif %}
+
+<div class="row">
+
+	
+	  <div class="col-sm-4">
+	  <a href="{{ site.data.urls.legalization.url }}"><h3 class="media-heading">Pro-legalization groups amp up for 2016 measures</h3></a>
+      <p>Well-funded advocacy groups drive the effort to legalize marijuana nationwide. Proponents have found success by securing financial backing and taking advantage of changing attitudes.
+</p>
+
+      </div>
+
+	  <div class="col-sm-4">
+
+	   <a href="{{ site.data.urls.montana.url }}"><h3 class="media-heading small-headline">In Montana, medical marijuana debate drags on</h3></a>
+      <p>Critics say Montana's medical marijuana industry grew beyond its bounds. Now, it could become the first state to shut down legal sales of cannabis, depending on the outcome of the state Supreme Court case. 
+</p>
+      </div>
+      
+           <div class="col-sm-4">
+       	<img src="/img/section-tease/MONTANA-TEASE.jpg" class="img-responsive">
+      </div>
+
+
+</div> <!-- row -->
+
+<div class="row">
+
+	  		  <div class="col-sm-4">
+
+ <a href="{{ site.data.urls.south.url }}"><h3 class="media-heading small-headline">A lost generation still lobbies in the South</h3></a>
+      <p>Mired in forgotten statutes, a marijuana movement sweeps through the conservative South. Old political tinder is fueling the new debate.
+</p>
+      </div>
+	  	  <div class="col-sm-4">
+	  	  
+	  	  <a href="{{ site.data.urls.triballands.url }}"><h3 class="media-heading small-headline">Tribes wait to jump into weed rush</h3></a>
+      <p>While Native American tribes can decide whether to legalize marijuana on tribal lands, many are concerned about possible repercussions from the government.
+</p>
+
+      </div>
+      
+      	  <div class="col-sm-4">	  	  
+      	   <a href="{{ site.data.urls.arizona.url }}"><h3 class="media-heading small-headline">Could Arizona be next to legalize?</h3></a>
+      <p>Arizona has been targeted as a state that could potentially legalize recreational marijuana in 2016. But problems remain in the state’s medical marijuana system.
+</p>  
+      </div>
+
+
+</div> <!-- row -->
+</div>
+{% include boxenter.html %}

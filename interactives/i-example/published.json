@@ -1,0 +1,284 @@
+{
+   "storymap":{
+      "map_as_image":true,
+      "slides":[
+         {
+            "date":"",
+            "text":{
+               "headline":"A STATE DIVIDED: Guns in colorado",
+               "text":"Colorado has a tumultuous history with guns, from mass shootings to lawsuits to senator recalls. Take a guided tour of the last 15 years in&nbsp;Rocky Mountain gun issues. (Photos by Morgan Spiehs/News21)"
+            },
+            "media":{
+               "url":"",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png"
+            },
+            "type":"overview",
+            "background":{
+               "url":"/interactives/colorado-storymap/Colorado-Landscape.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"April 20, 1999: Columbine High School shooting",
+               "text":"Teenage shooters Dylan Klebold and Eric Harris kill 12 students, 1 teacher and themselves in suburban Littleton, Colorado. Columbine English teacher Paula Reed recounts the day."
+            },
+            "media":{
+               "url":"https://www.youtube.com/watch?v=GctLvq-ued8&feature=youtu.be",
+               "credit":"Video by Erin Patrick O'Connor",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.603839,
+               "lon":-105.07410700000003,
+               "zoom":13
+            },
+            "background":{
+               "url":""
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"November 2, 2004: Democrats win control of general assembly",
+               "text":"And save for a two-year spurt in 2011-2012, they keep it, reversing a long trend of Republican dominance. Colorado State University professor John Straayer, who specializes in the Colorado legislature,&nbsp;has a theory on the origins of the change."
+            },
+            "media":{
+               "url":"https://soundcloud.com/news21gunwars/mono-001wav",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.7400447,
+               "lon":-104.9844157,
+               "zoom":13
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/Denver2.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"July 20, 2012: Aurora movie theater shooting",
+               "text":"Accused shooter James Holmes reportedly kills 12 moviegoers and injures 70 at a midnight showing of “The Dark Knight Rises.” Listen to Denver resident Marcus Weaver’s memories from&nbsp;the night.&nbsp;"
+            },
+            "media":{
+               "url":"https://www.youtube.com/watch?v=haKKFHfSsPA",
+               "credit":"Video by Erin Patrick O'Connor",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.7059825,
+               "lon":-104.8207127,
+               "zoom":13
+            },
+            "background":{
+               "url":""
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"March 20, 2013: Gov. Hickenlooper signs gun control bills",
+               "text":"Inspired by the shootings at Aurora and Sandy Hook Elementary School in Newtown, Connecticut, Colorado’s General Assembly approves gun control measures including background checks for private sales and a ban on magazines that hold more than 15 bullets. The laws&nbsp;take effect in&nbsp;July 2013.<br><br>"
+            },
+            "media":{
+               "url":"",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.7400447,
+               "lon":-104.9844157,
+               "zoom":14
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/Denver-Capitol-Building.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"Spring 2013: ACTIVISTS get organized",
+               "text":"Troubled by the oncoming passage of Colorado’s gun control bills, the owners of an engine repair shop start the Basic Freedom Defense Fund&nbsp;to seek&nbsp;the recall of several legislators involved with the laws. Luke Wagner, pictured below, was part of&nbsp;the movement."
+            },
+            "media":{
+               "url":"https://soundcloud.com/news21gunwars/why-luke-wagner-got-involved-in-the-recall-movement",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":37.27528,
+               "lon":-107.88006669999999,
+               "zoom":11
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/LukeWagner2.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"May 10, 2013: Sheriffs sue governor",
+               "text":"Weld County Sheriff John Cooke is the lead plaintiff in a lawsuit seeking to overturn the universal background check law and high-capacity magazine ban. Fifty-four of Colorado’s 62 sheriffs join him, although a federal district judge later rules they can’t sue in an official capacity."
+            },
+            "media":{
+               "url":"https://soundcloud.com/news21gunwars/why-sheriff-john-cooke-sued-his-governor",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":40.4233142,
+               "lon":-104.7091322,
+               "zoom":13
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/Cooke5.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"September 10, 2013: Sen. Angela Giron recalled",
+               "text":"Giron, chair of the Senate committee that approved the background check bill, loses her recall election by about 12 percent."
+            },
+            "media":{
+               "url":"https://soundcloud.com/news21gunwars/angela-giron-on-her-recall",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":38.2544472,
+               "lon":-104.6091409,
+               "zoom":13
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/Angela_Giron2_2.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"On the same day: Senate President John Morse recalled",
+               "text":"Morse loses his election by about 2 percent. He blames a faulty election process that didn’t include mail-in ballots and says his opposition used lies and deceit to gather the 16,000 signatures that spurred the election."
+            },
+            "media":{
+               "url":"https://soundcloud.com/news21gunwars/sen-john-morse-on-his-recall",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":38.8338816,
+               "lon":-104.8213634,
+               "zoom":13
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/John-Morse.jpg"
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"November 27, 2013: Senator resigns to avoid recall",
+               "text":"Democrat Sen. Evie Hudak resigns about a&nbsp;week before signatures that could lead to a recall election will be&nbsp;counted. The move ensures&nbsp;she will be replaced by a fellow Democrat. Read her resignation letter <a href=\"https://www.facebook.com/notes/evie-hudak/my-resignation-letter/10151864503208019\" target=\"_blank\" rel=\"nofollow\">here</a>."
+            },
+            "media":{
+               "url":"https://twitter.com/denverpost/status/405725590600183808",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.8027644,
+               "lon":-105.0874842,
+               "zoom":13
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"June 24, 2014: Gun rights advocates win big in primaries",
+               "text":"Rocky Mountain Gun Owners, Colorado’s largest gun rights lobby group, assists 10 of its 11 endorsed state legislature candidates to victory in the Republican primary elections. One of them is Patrick Neville, pictured above, of Castle Rock. All the RMGO-endorsed candidates back repeal of the 2013 gun laws."
+            },
+            "media":{
+               "url":"/interactives/colorado-storymap/PatrickNeville.jpg",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.3722121,
+               "lon":-104.85609019999998,
+               "zoom":13
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"June 26, 2014: Judge throws out gun lawsuit",
+               "text":"After months of deliberation,&nbsp;Federal District Judge Marcia Krieger rules that the 2013 gun laws are constitutional. Plaintiffs, who call the decision “<span>plainly wrong on the law and on the facts,”</span>&nbsp;are preparing an appeal."
+            },
+            "media":{
+               "url":"https://twitter.com/DenverChannel/status/482291778125438977",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.737567,
+               "lon":-104.98471790000002,
+               "zoom":13
+            }
+         },
+         {
+            "date":"",
+            "text":{
+               "headline":"November 4, 2014: state elections will take place",
+               "text":"A July Quinnipiac University&nbsp;<a href=\"http://www.quinnipiac.edu/news-and-events/quinnipiac-university-poll/colorado/release-detail?ReleaseID=2059\" target=\"_blank\" rel=\"nofollow\">poll</a> had Gov. John Hickenlooper tied with Republican challenger Bob Beauprez. In the same poll, 9 percent of respondents listed gun control as the most important issue in the coming election. Republicans must win one additional seat to gain control of the Colorado State Senate and five seats to gain control of the Colorado House of Representatives."
+            },
+            "media":{
+               "url":"",
+               "credit":"",
+               "caption":""
+            },
+            "location":{
+               "line":true,
+               "icon":"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
+               "lat":39.737567,
+               "lon":-104.98471790000002,
+               "zoom":11
+            },
+            "background":{
+               "url":"/interactives/colorado-storymap/Capitol-2.jpg"
+            }
+         }
+      ],
+      "map_type":"stamen:terrain",
+      "map_subdomains":""
+   }
+}

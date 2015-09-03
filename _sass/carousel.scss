@@ -1,0 +1,146 @@
+// Full screen carousel
+
+#carousel-video {
+	font-family: $titlefont;
+	text-shadow: 1px 1px #000;
+	color: white;
+}
+
+#readmore {
+	position: absolute;
+	top: 70%;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#readmore a {
+	color: white;
+	text-decoration: none;
+}
+
+#readmore p {
+	font-size: 30px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.front-carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+#navbar-carousel-shell {
+	position: absolute;
+	margin-top: -75px;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 75px;
+}
+
+#navbar-carousel-bottom a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.thevideo {
+  background-size: cover;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: 1;
+}
+
+.carousel-indicators li {
+	border-color: rgba(0,0,0,0);
+}
+
+.carousel-indicators .active {
+	background-color: rgba(0,0,0,0);
+}
+
+// End the carousel
+
+/* Death to the bootstrap carousel gradient */
+.carousel-control.left {
+	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+}
+.carousel-control.right {
+	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+}
+
+a.navbar-brand {
+  color: white !important;
+}
+
+.navbar-inverse {
+  background: rgba(0,0,0,0.7);
+  border-color: rgba(255,255,255,0);
+}
+
+ul.nav.navbar-nav>li>a:link {
+  color: white;
+}
+
+ul.nav.navbar-nav>li>a:hover {
+  background-color: rgba($gold,0.8);
+}
+
+ul.nav.navbar-nav>li {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#navbar-carousel-shell .btn-link {
+  font-size: 18px;
+}
+
+#navbar-carousel-shell .btn-link {
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+
+#navbar-carousel-shell li {
+
+	padding-left: 10px;
+}
+
+
+.filler p {
+  font-size:18px;
+
+}
+.overlay {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	z-index: 1;
+}
+
+.overlay a {
+	text-decoration: none;
+	color: white;
+}
