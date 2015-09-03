@@ -1,6 +1,3 @@
-news21-weedrush-public
-===========
-
 Public version of America’s Weed Rush, the 2015 News21 project on marijuana legalization in America.
 
 ##Introduction
