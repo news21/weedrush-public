@@ -354,7 +354,7 @@ To convert from CSV to JSON, use this site: [http://csvtojson.com](http://csvtoj
 
 The actual slideshow lives in a file called ```index.html``` which lives in the same folder.
 
-Duplicate the existing index.html to the new slideshow folder and then *only* change line 81 from:
+Duplicate the existing index.html to the new slideshow folder and then *only* change line 83 from:
 
 ```$.getJSON('/slideshows/Nucla_Marie/Nucla_Marie.json', function(data) {```
 
